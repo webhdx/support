@@ -22,6 +22,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'webhdx', // Usually your GitHub org/user name.
   projectName: 'support', // Usually your repo name.
+  deploymentBranch: 'gh-pages', // The branch of the docs repo to deploy to
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
