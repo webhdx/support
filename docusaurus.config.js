@@ -8,8 +8,8 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'support.webhdx.dev',
+  tagline: 'Docs for some awesome mods',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -45,8 +45,8 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/webhdx/support/tree/main/',
+          routeBasePath: '/',
         },
         blog: false,
         theme: {
@@ -61,21 +61,38 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+      announcementBar: {
+        id: 'announcement',
+        content:
+          'It\'s live! 🥳 Documentation is currently in beta! Please report any issues to me via Discord.',
+        backgroundColor: '#fafbfc',
+        textColor: '#091E42',
+        isCloseable: false,
+      },
       navbar: {
-        title: 'My Site',
+        title: 'support.webhdx.dev',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'webhdx',
+          src: 'img/logo.jpg',
+          href: '/',
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
+            type: 'doc',
             position: 'left',
-            label: 'Tutorial',
+            docId: 'gc/m2loader/index',
+            label: 'M.2 Loader',
+            activeBaseRegex: `/docs/gc/m2loader`,
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            type: 'doc',
+            position: 'left',
+            docId: 'gc/picoboot/index',
+            label: 'PicoBoot',
+            activeBaseRegex: `/docs/gc/picoboot`,
+          },
+          {
+            href: 'https://github.com/webhdx/support',
             label: 'GitHub',
             position: 'right',
           },
@@ -83,44 +100,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} webhdx`,
       },
       prism: {
         theme: prismThemes.github,
