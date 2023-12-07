@@ -25,6 +25,7 @@ const sidebars = {
           label: 'M.2 Loader',
           link: {type: 'doc', id: 'gc/m2loader/index'},
           items: [
+            'gc/m2loader/user-manual',
             'gc/m2loader/ssd-compatibility-list',
           ],
         },

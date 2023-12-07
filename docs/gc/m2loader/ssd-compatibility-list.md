@@ -1,9 +1,9 @@
 # SSD Compatibility List
 
-Here you'll find community maintained list of M.2 Loader compatible SSDs. Do you have a SSD not featured on this list? Please report its compatibility by modifying this document on GitHub or by reporting it on webhdx's Discord server.
+Discover a community-curated list of M.2 Loader compatible SSDs here. If your SSD is not listed, kindly report its compatibility either by editing this document on GitHub or by submitting the information on webhdx's Discord server.
 
 :::warning
-Please be aware M.2 Loader is only compatible with **SATA** SSDs in the M.2 form factor. More popular NVMe SSDs won't work.
+Note that the M.2 Loader exclusively supports M.2 form factor SSDs in the SATA interface; NVMe SSDs are not compatible.
 :::
 
 |                                                     SSD                                                      | Capacity | Length | Controller IC | Notes | Links |
