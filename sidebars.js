@@ -27,6 +27,7 @@ const sidebars = {
           items: [
             'gc/m2loader/user-manual',
             'gc/m2loader/ssd-compatibility-list',
+            'gc/m2loader/specifications',
           ],
         },
         {
