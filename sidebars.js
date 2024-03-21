@@ -31,11 +31,11 @@ const sidebars = {
           label: 'PicoBoot',
           link: {type: 'doc', id: 'gc/picoboot/index'},
           items: [
-            'gc/picoboot/compiling-firmware',
-            'gc/picoboot/faq',
             'gc/picoboot/installation-guide',
+            'gc/picoboot/faq',
             'gc/picoboot/troubleshooting',
             'gc/picoboot/update-picoboot',
+            'gc/picoboot/compiling-firmware',
           ],
         },
       ],
