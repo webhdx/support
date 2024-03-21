@@ -23,6 +23,10 @@ For a more convenient M.2 Loader experience, it is advisable to use it on a cons
 
 First you'll need to set up your SSD on your computer. This can be done with inexpensive M.2 SSD to USB adapter. A really cheap ones will do the job. I use $4 USB adapter and never had a single problem with it.
 
+|                                                   | Purchase links (affiliate)                                                                                                                                                                                        |
+| :-----------------------------------------------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ![USB adapter](/img/m2loader/m2_usb_adapter.png) | [AliExpress](https://aliexpress.com)<br/>[Amazon (US)](https://aliexpress.com)<br/>[Amazon (CA)](https://aliexpress.com)<br/>[Amazon (DE)](https://aliexpress.com)<br/>[Amazon (FR)](https://aliexpress.com)<br/> |
+
 Once connected you need to format the drive to use FAT32 or exFAT filesystem. FAT32 has better compatibility with homebrew software so I recommend using FAT32. It's also important to use Master Boot Record (MBR) partition table.
 
 If you are on Windows PC, you can use program called "guiformat" to prepare the SSD. Mac OS has built in program "Disk Utility".

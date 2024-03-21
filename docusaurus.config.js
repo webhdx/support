@@ -80,16 +80,16 @@ const config = {
           {
             type: 'doc',
             position: 'left',
-            docId: 'gc/m2loader/index',
-            label: 'M.2 Loader',
-            activeBaseRegex: `/docs/gc/m2loader`,
+            docId: 'gc/eth2gc/index',
+            label: 'ETH2GC',
+            activeBaseRegex: 'gc/eth2gc',
           },
           {
             type: 'doc',
             position: 'left',
             docId: 'gc/picoboot/index',
             label: 'PicoBoot',
-            activeBaseRegex: `/docs/gc/picoboot`,
+            activeBaseRegex: 'gc/picoboot',
           },
           {
             href: 'https://github.com/webhdx/support',
@@ -107,6 +107,19 @@ const config = {
         darkTheme: prismThemes.dracula,
       },
     }),
+    
+    plugins: [
+      [
+        '@docusaurus/plugin-ideal-image',
+        {
+          quality: 70,
+          max: 1030, // max resized image's size.
+          min: 640, // min resized image's size. if original is lower, use that size.
+          steps: 2, // the max number of images generated between min and max (inclusive)
+          disableInDev: false,
+        },
+      ],
+    ],
 };
 
 export default config;

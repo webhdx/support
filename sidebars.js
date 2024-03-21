@@ -20,14 +20,24 @@ const sidebars = {
       label: 'GameCube',
       link: {type: 'doc', id: 'gc/index'},
       items: [
+        // {
+        //   type: 'category',
+        //   label: 'M.2 Loader',
+        //   link: {type: 'doc', id: 'gc/m2loader/index'},
+        //   items: [
+        //     'gc/m2loader/user-manual',
+        //     'gc/m2loader/ssd-compatibility-list',
+        //     'gc/m2loader/specifications',
+        //   ],
+        // },
         {
           type: 'category',
-          label: 'M.2 Loader',
-          link: {type: 'doc', id: 'gc/m2loader/index'},
+          label: 'ETH2GC',
+          link: {type: 'doc', id: 'gc/eth2gc/index'},
           items: [
-            'gc/m2loader/user-manual',
-            'gc/m2loader/ssd-compatibility-list',
-            'gc/m2loader/specifications',
+            'gc/eth2gc/index',
+            // 'gc/eth2gc/lite-vs-sidecar',
+            // 'gc/eth2gc/build-your-own',
           ],
         },
         {
