@@ -50,7 +50,7 @@ import {ETH2GCModels} from '@site/src/components/ETH2GC';
     name: 'ETH2GC Lite',
     image: require('@site/static/img/eth2gc/ETH2GC_Lite.jpg'),
     purchase_url: 'https://store.webhdx.dev/products/eth2gc-lite-broadband-adapter-emulator',
-    diy_url: '#',
+    diy_url: 'https://github.com/webhdx/ETH2GC/#-eth2gc-lite',
     nic: 'ENC28J60',
     description: (
       <>
