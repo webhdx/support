@@ -1418,7 +1418,7 @@
     tslib "^2.6.0"
     webpack "^5.88.1"
 
-"@docusaurus/plugin-debug@3.1.1":
+"@docusaurus/plugin-debug@3.1.1", "@docusaurus/plugin-debug@^3.1.1":
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/@docusaurus/plugin-debug/-/plugin-debug-3.1.1.tgz#cee5aae1fef288fb93f68894db79a2612e313d3f"
   integrity sha512-xWeMkueM9wE/8LVvl4+Qf1WqwXmreMjI5Kgr7GYCDoJ8zu4kD+KaMhrh7py7MNM38IFvU1RfrGKacCEe2DRRfQ==
