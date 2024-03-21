@@ -20,16 +20,6 @@ const sidebars = {
       label: 'GameCube',
       link: {type: 'doc', id: 'gc/index'},
       items: [
-        // {
-        //   type: 'category',
-        //   label: 'M.2 Loader',
-        //   link: {type: 'doc', id: 'gc/m2loader/index'},
-        //   items: [
-        //     'gc/m2loader/user-manual',
-        //     'gc/m2loader/ssd-compatibility-list',
-        //     'gc/m2loader/specifications',
-        //   ],
-        // },
         {
           type: 'category',
           label: 'ETH2GC',
