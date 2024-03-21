@@ -6,37 +6,6 @@ import Link from '@docusaurus/Link';
 import Image from '@theme/IdealImage';
 import Heading from '@theme/Heading';
 
-const Models = [
-  {
-    name: 'ETH2GC Sidecar',
-    image: require('@site/static/img/eth2gc/ETH2GC_Sidecar.jpg'),
-    purchase_url: 'https://store.webhdx.dev/products/eth2gc-sidecar-broadband-adapter-emulator',
-    diy_url: null,
-    nic: 'ENC28J60',
-    description: (
-      <div>
-        <div>✅ Uses off the shelf ENC28J60 "Mini" module</div>
-        <div>✅ Compatible with GameBoy Player</div>
-        <div>✅ Cable comes towards the rear</div>
-      </div>
-    )
-  },
-  {
-    name: 'ETH2GC Lite',
-    image: require('@site/static/img/eth2gc/ETH2GC_Lite.jpg'),
-    purchase_url: 'https://store.webhdx.dev/products/eth2gc-lite-broadband-adapter-emulator',
-    diy_url: '#',
-    nic: 'ENC28J60',
-    description: (
-      <div>
-        <div>✅ Uses off the shelf ENC28J60 "Mini" module</div>
-        <div>❌ Inompatible with GameBoy Player*</div>
-        <div>❌ Cable sticks out to the side</div>
-      </div>
-    )
-  },
-];
-
 function ETH2GCCard({name, image, purchase_url, diy_url, nic, description}) {
   return (
     <div className="col col--6 margin-bottom--lg">
@@ -56,11 +25,11 @@ function ETH2GCCard({name, image, purchase_url, diy_url, nic, description}) {
         <div className="card__footer">
           <div className="button-group button-group--block">
             {purchase_url != null && 
-              <Link className="button button--primary" to={purchase_url}>
-                🛍️ Purchase
+              <Link className="button button--lg button--primary" to={purchase_url}>
+                🛍️ Buy
               </Link>}
             {diy_url != null && 
-              <Link className="button button--secondary" to={diy_url}>
+              <Link className="button button--lg button--secondary" to={diy_url}>
                 🛠️ Build
               </Link>}
           </div>
@@ -70,12 +39,14 @@ function ETH2GCCard({name, image, purchase_url, diy_url, nic, description}) {
   );
 }
 
-export function ETH2GCModels() {
+export function ETH2GCModels({models}) {
   return (
     <div className="row">
-      {Models.map((model) => (
-        <ETH2GCCard key={model.name} {...model} />
-      ))}
+      {
+        models.map((model) => (
+          <ETH2GCCard key={model.name} {...model} />
+        ))
+      }
     </div>
   );
 }
