@@ -1,15 +1,7 @@
-/**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */
-
 /* eslint-disable global-require */
 
 import React from 'react';
 import clsx from 'clsx';
-import Translate from '@docusaurus/Translate';
 import Link from '@docusaurus/Link';
 import Image from '@theme/IdealImage';
 import Heading from '@theme/Heading';
@@ -24,11 +16,9 @@ const Models = [
       <div>
         Ethernet module: <b>ENC28J60</b>
         <br /><br />
-        <div>
-          <div>✅ Uses off the shelf ENC28J60 "Mini" module</div>
-          <div>✅ Compatible with GameBoy Player</div>
-          <div>✅ Cable comes towards the rear</div>
-        </div>
+        <div>✅ Uses off the shelf ENC28J60 "Mini" module</div>
+        <div>✅ Compatible with GameBoy Player</div>
+        <div>✅ Cable comes towards the rear</div>
       </div>
     )
   },
@@ -41,11 +31,9 @@ const Models = [
       <div>
         Ethernet module: <b>ENC28J60</b>
         <br /><br />
-        <div>
-          <div>✅ Uses off the shelf ENC28J60 "Mini" module</div>
-          <div>❌ Inompatible with GameBoy Player*</div>
-          <div>❌ Cable sticks out to the side</div>
-        </div>
+        <div>✅ Uses off the shelf ENC28J60 "Mini" module</div>
+        <div>❌ Inompatible with GameBoy Player*</div>
+        <div>❌ Cable sticks out to the side</div>
       </div>
     )
   },
@@ -62,7 +50,7 @@ function ETH2GCCard({name, image, purchase_url, diy_url, description}) {
         </div>
         <div className="card__body">
           <Heading as="h3">{name}</Heading>
-          <p>{description}</p>
+          {description}
         </div>
         <div className="card__footer">
           <div className="button-group button-group--block">

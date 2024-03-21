@@ -82,14 +82,16 @@ const config = {
             position: 'left',
             docId: 'gc/eth2gc/index',
             label: 'ETH2GC',
-            activeBaseRegex: 'gc/eth2gc',
+            // prependBaseUrlToHref: true,
+            activeBasePath: '/gc/eth2gc',
           },
           {
             type: 'doc',
             position: 'left',
             docId: 'gc/picoboot/index',
             label: 'PicoBoot',
-            activeBaseRegex: 'gc/picoboot',
+            // prependBaseUrlToHref: true,
+            activeBasePath: '/gc/picoboot',
           },
           {
             href: 'https://github.com/webhdx/support',

@@ -1,19 +1,19 @@
 ---
-title: Introduction
+label: ETH2GC - Broadband Adapter Emulator
 ---
 
 import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
-<div class="hero">
-  <div class="container">
-    <div class="row">
-    <div class="col col--9">
-      <p class="hero__subtitle">
+<div className="hero">
+  <div className="container">
+    <div className="row">
+    <div className="col col--9">
+      <div className="hero__subtitle">
         ETH2GC is a hardware project for interfacing various Ethernet adapters to GameCube. It leverages Broadband Adapter emulation feature added to [Swiss](https://github.com/emukidid/swiss-gc).
-      </p>
+      </div>
     </div>
-    <div class="col col--3">
+    <div className="col col--3">
       <ThemedImage
         alt="ETH2GC Logo"
         sources={{
@@ -23,8 +23,6 @@ import useBaseUrl from '@docusaurus/useBaseUrl';
       />
     </div>
   </div>
-
-
   </div>
 </div>
 
