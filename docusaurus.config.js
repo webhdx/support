@@ -41,6 +41,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
+        debug: true,
         docs: {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
@@ -78,20 +79,14 @@ const config = {
         },
         items: [
           {
-            type: 'doc',
             position: 'left',
-            docId: 'gc/eth2gc/index',
+            to: '/gc/eth2gc',
             label: 'ETH2GC',
-            // prependBaseUrlToHref: true,
-            activeBasePath: '/gc/eth2gc',
           },
           {
-            type: 'doc',
             position: 'left',
-            docId: 'gc/picoboot/index',
+            to: '/gc/picoboot',
             label: 'PicoBoot',
-            // prependBaseUrlToHref: true,
-            activeBasePath: '/gc/picoboot',
           },
           {
             href: 'https://github.com/webhdx/support',

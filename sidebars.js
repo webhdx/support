@@ -24,11 +24,7 @@ const sidebars = {
           type: 'category',
           label: 'ETH2GC',
           link: {type: 'doc', id: 'gc/eth2gc/index'},
-          items: [
-            'gc/eth2gc/index',
-            // 'gc/eth2gc/lite-vs-sidecar',
-            // 'gc/eth2gc/build-your-own',
-          ],
+          items: [],
         },
         {
           type: 'category',

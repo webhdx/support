@@ -1,4 +1,0 @@
----
-slug: /
-title: Home
----
