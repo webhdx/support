@@ -12,10 +12,9 @@ const Models = [
     image: require('@site/static/img/eth2gc/ETH2GC_Sidecar.jpg'),
     purchase_url: 'https://store.webhdx.dev/products/eth2gc-sidecar-broadband-adapter-emulator',
     diy_url: null,
+    nic: 'ENC28J60',
     description: (
       <div>
-        Ethernet module: <b>ENC28J60</b>
-        <br /><br />
         <div>✅ Uses off the shelf ENC28J60 "Mini" module</div>
         <div>✅ Compatible with GameBoy Player</div>
         <div>✅ Cable comes towards the rear</div>
@@ -27,10 +26,9 @@ const Models = [
     image: require('@site/static/img/eth2gc/ETH2GC_Lite.jpg'),
     purchase_url: 'https://store.webhdx.dev/products/eth2gc-lite-broadband-adapter-emulator',
     diy_url: '#',
+    nic: 'ENC28J60',
     description: (
       <div>
-        Ethernet module: <b>ENC28J60</b>
-        <br /><br />
         <div>✅ Uses off the shelf ENC28J60 "Mini" module</div>
         <div>❌ Inompatible with GameBoy Player*</div>
         <div>❌ Cable sticks out to the side</div>
@@ -39,7 +37,7 @@ const Models = [
   },
 ];
 
-function ETH2GCCard({name, image, purchase_url, diy_url, description}) {
+function ETH2GCCard({name, image, purchase_url, diy_url, nic, description}) {
   return (
     <div className="col col--6 margin-bottom--lg">
       <div className={clsx('card')}>
@@ -49,7 +47,10 @@ function ETH2GCCard({name, image, purchase_url, diy_url, description}) {
           </Link>
         </div>
         <div className="card__body">
-          <Heading as="h3">{name}</Heading>
+          <Heading as="h2" className="margin-bottom--none">{name}</Heading>
+          <div className="margin-bottom--md margin-top--sm">
+            <span class="badge badge--secondary">{nic}</span>
+          </div>
           {description}
         </div>
         <div className="card__footer">
