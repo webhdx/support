@@ -89,15 +89,68 @@ const config = {
             label: 'PicoBoot',
           },
           {
-            href: 'https://github.com/webhdx/support',
-            label: 'GitHub',
+            href: 'https://store.webhdx.dev',
+            label: 'Store',
             position: 'right',
+          },
+          {
+            href: "https://github.com/webhdx/support",
+            className: 'header-icon header-github-link',
+            'aria-label': 'GitHub',
+            position: "right",
+          },
+          {
+            href: "https://click.webhdx.dev/discord",
+            className: 'header-icon header-discord-link',
+            'aria-label': 'Discord',
+            position: "right",
           },
         ],
       },
       footer: {
         style: 'dark',
         copyright: `Copyright © ${new Date().getFullYear()} webhdx`,
+        links: [
+          {
+            title: 'Docs',
+            items: [
+              {
+                label: 'ETH2GC',
+                to: 'gc/eth2gc',
+              },
+              {
+                label: 'PicoBoot',
+                to: 'gc/picoboot',
+              },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'Join discord server',
+                to: 'https://click.webhdx.dev/discord',
+              },
+              {
+                label: 'Submit a bug or feature',
+                to: 'https://github.com/webhdx/support/issues/',
+              },
+              {
+                label: 'Support me on GitHub',
+                to: 'https://github.com/sponsors/webhdx',
+              },
+            ],
+          },
+          {
+            title: 'Resources',
+            items: [
+              {
+                label: 'GC-Forever Wiki',
+                to: 'https://gc-forever.com/wiki',
+              },
+            ],
+          },
+        ],
       },
       prism: {
         theme: prismThemes.github,
