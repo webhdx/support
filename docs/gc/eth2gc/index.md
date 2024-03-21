@@ -1,5 +1,5 @@
 ---
-label: ETH2GC - Broadband Adapter Emulator
+title: Introduction
 ---
 
 import ThemedImage from '@theme/ThemedImage';
