@@ -6,17 +6,19 @@ import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import {ETH2GCModels} from '@site/src/components/ETH2GC';
 
-<div className="hero">
+<div className="hero project">
   <div className="container">
     <div className="row">
     <div className="col col--9">
+    <h1 class="hero__title">ETH2GC</h1>
       <div className="hero__subtitle">
-        ETH2GC is a hardware project for interfacing various Ethernet adapters to GameCube. It leverages Broadband Adapter emulation feature added to [Swiss](https://github.com/emukidid/swiss-gc).
+        A hardware project for interfacing various Ethernet adapters to GameCube. It leverages Broadband Adapter emulation feature in [Swiss](https://github.com/emukidid/swiss-gc).
       </div>
     </div>
-    <div className="col col--3">
+    <div className="col col--3 project__logo">
       <ThemedImage
         alt="ETH2GC Logo"
+        width="100%"
         sources={{
           light: useBaseUrl('/img/eth2gc/ETH2GC_Logo_Dark.png'),
           dark: useBaseUrl('/img/eth2gc/ETH2GC_Logo_Light.png'),
@@ -37,11 +39,11 @@ import {ETH2GCModels} from '@site/src/components/ETH2GC';
     diy_url: null,
     nic: 'ENC28J60',
     description: (
-      <div>
+      <>
         <div>✅ Uses off the shelf ENC28J60 "Mini" module</div>
         <div>✅ Compatible with GameBoy Player</div>
         <div>✅ Cable comes towards the rear</div>
-      </div>
+      </>
     )
   },
   {
@@ -51,11 +53,11 @@ import {ETH2GCModels} from '@site/src/components/ETH2GC';
     diy_url: '#',
     nic: 'ENC28J60',
     description: (
-      <div>
+      <>
         <div>✅ Uses off the shelf ENC28J60 "Mini" module</div>
         <div>❌ Incompatible with GameBoy Player*</div>
         <div>❌ Cable sticks out to the side</div>
-      </div>
+      </>
     )
   },
 ]} />
