@@ -24,7 +24,9 @@ const sidebars = {
           type: 'category',
           label: 'ETH2GC',
           link: {type: 'doc', id: 'gc/eth2gc/index'},
-          items: [],
+          items: [
+            'gc/eth2gc/faq'
+          ],
         },
         {
           type: 'category',
