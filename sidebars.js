@@ -29,7 +29,6 @@ const sidebars = {
             {
               type: 'category',
               label: 'Sidecar',
-              link: undefined,
               items: [
                 {
                   type: 'doc',
@@ -41,7 +40,6 @@ const sidebars = {
             {
               type: 'category',
               label: 'Lite',
-              link: undefined,
               items: [
                 {
                   type: 'doc',
