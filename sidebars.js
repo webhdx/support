@@ -25,7 +25,19 @@ const sidebars = {
           label: 'ETH2GC',
           link: {type: 'doc', id: 'gc/eth2gc/index'},
           items: [
-            'gc/eth2gc/faq'
+            'gc/eth2gc/faq',
+            {
+              type: 'category',
+              label: 'Lite',
+              link: undefined,
+              items: [
+                {
+                  type: 'doc',
+                  id: 'gc/eth2gc/lite/build-guide', // document ID
+                  label: 'Build guide', // sidebar label
+                },
+              ],
+            },
           ],
         },
         {
