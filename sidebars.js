@@ -25,28 +25,19 @@ const sidebars = {
           label: 'ETH2GC',
           link: {type: 'doc', id: 'gc/eth2gc/index'},
           items: [
-            'gc/eth2gc/faq',
             {
-              type: 'category',
-              label: 'Sidecar',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'gc/eth2gc/sidecar/build-guide',
-                  label: 'Build guide',
-                },
-              ],
+              type: 'doc',
+              id: 'gc/eth2gc/faq'
             },
             {
-              type: 'category',
-              label: 'Lite',
-              items: [
-                {
-                  type: 'doc',
-                  id: 'gc/eth2gc/lite/build-guide',
-                  label: 'Build guide',
-                },
-              ],
+              type: 'doc',
+              id: 'gc/eth2gc/sidecar/build-guide',
+              label: 'Sidecar - Build guide',
+            },
+            {
+              type: 'doc',
+              id: 'gc/eth2gc/lite/build-guide',
+              label: 'Lite - Build guide',
             },
           ],
         },
@@ -60,7 +51,7 @@ const sidebars = {
             'gc/picoboot/troubleshooting',
             'gc/picoboot/update-picoboot',
             'gc/picoboot/compiling-firmware',
-          ],
+          ]
         },
       ],
     },
