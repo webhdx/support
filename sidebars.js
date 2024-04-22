@@ -27,17 +27,33 @@ const sidebars = {
           items: [
             {
               type: 'doc',
-              id: 'gc/eth2gc/faq'
+              id: 'gc/eth2gc/faq',
             },
             {
-              type: 'doc',
-              id: 'gc/eth2gc/sidecar/build-guide',
-              label: 'Sidecar - Build guide',
+              type: 'category',
+              label: 'Sidecar',
+              collapsible: false,
+              collapsed: false,
+              items: [
+                {
+                  type: 'doc',
+                  id: 'gc/eth2gc/sidecar/build-guide',
+                  label: 'Build guide',
+                },
+              ],
             },
             {
-              type: 'doc',
-              id: 'gc/eth2gc/lite/build-guide',
-              label: 'Lite - Build guide',
+              type: 'category',
+              label: 'Lite',
+              collapsible: false,
+              collapsed: false,
+              items: [
+                {
+                  type: 'doc',
+                  id: 'gc/eth2gc/lite/build-guide',
+                  label: 'Build guide',
+                },
+              ],
             },
           ],
         },
