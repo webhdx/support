@@ -28,6 +28,18 @@ const sidebars = {
             'gc/eth2gc/faq',
             {
               type: 'category',
+              label: 'Sidecar',
+              link: undefined,
+              items: [
+                {
+                  type: 'doc',
+                  id: 'gc/eth2gc/sidecar/build-guide', // document ID
+                  label: 'Build guide', // sidebar label
+                },
+              ],
+            },
+            {
+              type: 'category',
               label: 'Lite',
               link: undefined,
               items: [
