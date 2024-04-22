@@ -66,7 +66,7 @@ import {ETH2GCModels} from '@site/src/components/ETH2GC';
 
 
 # 🛍️ Where to buy?
-Original ETH2GC designs can be purchased directly from [my online store](https://store.webhdx.dev). By purchasing my products you help funding all my future projects.
+Original ETH2GC designs can be purchased directly from [my online store](https://store.webhdx.dev). By purchasing from my store you help funding all my future projects.
 
 # Homebrew support
 
