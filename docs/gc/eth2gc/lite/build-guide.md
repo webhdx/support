@@ -13,6 +13,10 @@ title: ETH2GC Lite Build Guide
 
 STL file for 3D printed case, PCB gerbers and full Bill Of Materials with purchase links are available in GitHub repository [here](https://github.com/webhdx/ETH2GC/tree/main?tab=readme-ov-file#-eth2gc-lite).
 
+| Part          | Links                                                                                                                                                              |
+|:-------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![ENC28J60 MINI](/img/eth2gc/ENC28J60_Mini.jpg)<br/>**ENC28J60 MINI** | [AliExpress (affiliate)](https://s.click.aliexpress.com/e/_DlkjMGp)<br/>[Amazon US](https://www.amazon.com/ENC28J60-Ethernet-Network-Module-Arduino/dp/B07KNTHR84) |
+
 :::info
 If you don't want to purchase parts separately, you can buy DIY kit from [my store](https://store.webhdx.dev/products/eth2gc-lite-broadband-adapter-emulator).
 :::

@@ -15,6 +15,10 @@ title: ETH2GC Sidecar Build Guide
 * 6x M2 6mm self tapping screws
 * ENC28J60 Mini module
 
+| Part          | Links                                                                                                                                                              |
+|:-------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| ![ENC28J60 MINI](/img/eth2gc/ENC28J60_Mini.jpg)<br/>**ENC28J60 MINI** | [AliExpress (affiliate)](https://s.click.aliexpress.com/e/_DlkjMGp)<br/>[Amazon US](https://www.amazon.com/ENC28J60-Ethernet-Network-Module-Arduino/dp/B07KNTHR84) |
+
 :::info
 DIY kits are available [at my store](https://store.webhdx.dev/products/eth2gc-sidecar-broadband-adapter-emulator).
 :::
