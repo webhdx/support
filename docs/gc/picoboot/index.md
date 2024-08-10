@@ -21,7 +21,7 @@ import PicoBootLogo from '@site/static/img/picoboot/logo.svg';
         * automatically boots any homebrew app of your choice
         * similar experience to ODEs like FlippyDrive or GC Loader
       </div>
-      <a href="https://github.com/webhdx/ETH2GC" target="_blank" class="button button--lg button--primary button--icon"><IconBrandGithub stroke={2} /> View on Github</a>
+      <a href="https://github.com/webhdx/PicoBoot" target="_blank" class="button button--lg button--primary button--icon"><IconBrandGithub stroke={2} /> View on Github</a>
     </div>
     <div className="col col--4 project__logo">
         <PicoBootLogo className="picoboot-logo" />
