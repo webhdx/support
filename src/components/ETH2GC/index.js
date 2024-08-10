@@ -5,6 +5,7 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Image from '@theme/IdealImage';
 import Heading from '@theme/Heading';
+import { IconShoppingCart, IconHammer } from '@tabler/icons-react';
 
 function ETH2GCCard({name, image, purchase_url, diy_url, nic, description}) {
   return (
@@ -25,12 +26,12 @@ function ETH2GCCard({name, image, purchase_url, diy_url, nic, description}) {
         <div className="card__footer">
           <div className="button-group button-group--block">
             {purchase_url != null && 
-              <Link className="button button--lg button--primary" to={purchase_url}>
-                🛍️ Buy
+              <Link className="button button--lg button--primary button--icon" to={purchase_url}>
+                <IconShoppingCart stroke={2} /> Buy
               </Link>}
             {diy_url != null && 
-              <Link className="button button--lg button--secondary" to={diy_url}>
-                🛠️ Build
+              <Link className="button button--lg button--secondary button--icon" to={diy_url}>
+                <IconHammer stroke={2} /> Build
               </Link>}
           </div>
         </div>

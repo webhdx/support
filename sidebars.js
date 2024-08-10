@@ -37,8 +37,8 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'gc/eth2gc/sidecar/build-guide',
-                  label: 'Build guide',
+                  id: 'gc/eth2gc/sidecar/diy-assembly-guide',
+                  label: 'DIY Assembly Guide',
                 },
               ],
             },
@@ -50,8 +50,8 @@ const sidebars = {
               items: [
                 {
                   type: 'doc',
-                  id: 'gc/eth2gc/lite/build-guide',
-                  label: 'Build guide',
+                  id: 'gc/eth2gc/lite/diy-assembly-guide',
+                  label: 'DIY Assembly Guide',
                 },
               ],
             },

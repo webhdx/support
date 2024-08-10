@@ -1,11 +1,16 @@
 ---
-title: ETH2GC Sidecar Build Guide
+title: ETH2GC Sidecar DIY Assembly Guide
 ---
 
-# ETH2GC Sidecar - Build Guide
+# ETH2GC Sidecar - DIY Assembly Guide
+
+:::info
+ETH2GC Sidecar is sold as a complete unit or a DIY kit. You can purchase both kits [at my store](https://store.webhdx.dev/products/eth2gc-sidecar-broadband-adapter-emulator). Complete unit does not require any assembly.
+:::
 
 # Prerequisites
 
+* ETH2GC Sidecar DIY kit
 * Breakout PCB
 * Main PCB
 * 2x4P Male Headers P=2.54mm
@@ -19,9 +24,7 @@ title: ETH2GC Sidecar Build Guide
 |:-------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | ![ENC28J60 MINI](/img/eth2gc/ENC28J60_Mini.jpg)<br/>**ENC28J60 MINI** | [AliExpress (affiliate)](https://s.click.aliexpress.com/e/_DlkjMGp)<br/>[Amazon US](https://www.amazon.com/ENC28J60-Ethernet-Network-Module-Arduino/dp/B07KNTHR84) |
 
-:::info
-DIY kits are available [at my store](https://store.webhdx.dev/products/eth2gc-sidecar-broadband-adapter-emulator).
-:::
+
 
 # Soldering
 

@@ -1,21 +1,24 @@
 ---
-title: Introduction
+title: ETH2GC
+hide_title: true
 ---
 
 import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
-import {ETH2GCModels} from '@site/src/components/ETH2GC';
+import { ETH2GCModels } from '@site/src/components/ETH2GC';
+import { IconBrandGithub } from '@tabler/icons-react';
 
 <div className="hero project">
   <div className="container">
     <div className="row">
-    <div className="col col--9">
+    <div className="col col--8">
     <h1 class="hero__title">ETH2GC</h1>
       <div className="hero__subtitle">
-        A hardware project for interfacing various Ethernet adapters to GameCube. It leverages Broadband Adapter emulation feature in [Swiss](https://github.com/emukidid/swiss-gc).
+        A series of hardware adapters utilizing Broadband&nbsp;Adapter emulation in [Swiss](https://github.com/emukidid/swiss-gc).
       </div>
+      <a href="https://github.com/webhdx/ETH2GC" class="button button--lg button--primary button--icon"><IconBrandGithub stroke={2} /> View on Github</a>
     </div>
-    <div className="col col--3 project__logo">
+    <div className="col col--4 project__logo">
       <ThemedImage
         alt="ETH2GC Logo"
         width="100%"
@@ -42,7 +45,7 @@ import {ETH2GCModels} from '@site/src/components/ETH2GC';
       <>
         <div>✅ Uses off the shelf ENC28J60 "Mini" module</div>
         <div>✅ Compatible with GameBoy Player</div>
-        <div>✅ Cable comes towards the rear</div>
+        <div>✅ Cable comes out at the rear</div>
       </>
     )
   },
@@ -55,17 +58,14 @@ import {ETH2GCModels} from '@site/src/components/ETH2GC';
     description: (
       <>
         <div>✅ Uses off the shelf ENC28J60 "Mini" module</div>
-        <div>❌ Incompatible with GameBoy Player*</div>
-        <div>❌ Cable sticks out to the side</div>
+        <div>❌ Incompatible with GameBoy Player</div>
+        <div>❌ Cable comes out to the side</div>
       </>
     )
   },
 ]} />
 
-*&ast; Unless physically modified by trimming through hole component legs.*
-
-
-# 🛍️ Where to buy?
+# Where to buy?
 Original ETH2GC designs can be purchased directly from [my online store](https://store.webhdx.dev). By purchasing from my store you help funding all my future projects.
 
 # Homebrew support

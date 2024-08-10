@@ -91,19 +91,16 @@ const config = {
           {
             href: 'https://store.webhdx.dev',
             label: 'Store',
+            class: 'button button--outline button--primary',
             position: 'right',
           },
           {
-            href: "https://github.com/webhdx/support",
-            className: 'header-icon header-github-link',
-            'aria-label': 'GitHub',
-            position: "right",
+            type: 'custom-IconDiscordItem',
+            position: 'right',
           },
           {
-            href: "https://click.webhdx.dev/discord",
-            className: 'header-icon header-discord-link',
-            'aria-label': 'Discord',
-            position: "right",
+            type: 'custom-IconGitHubItem',
+            position: 'right',
           },
         ],
       },
@@ -168,6 +165,21 @@ const config = {
           steps: 2, // the max number of images generated between min and max (inclusive)
           disableInDev: false,
         },
+      ],
+      [
+        "@docusaurus/plugin-client-redirects",
+        {
+          redirects: [
+            {
+              to: '/gc/eth2gc/sidecar/diy-assembly-guide',
+              from: '/gc/eth2gc/sidecar/build-guide',
+            },
+            {
+              to: '/gc/eth2gc/lite/diy-assembly-guide',
+              from: '/gc/eth2gc/lite/build-guide',
+            },
+          ],
+        }
       ],
     ],
 };
