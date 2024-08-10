@@ -1,6 +1,34 @@
-# PicoBoot
+---
+title: PicoBoot
+hide_title: true
+---
 
-Revolutionary open source IPL modchip.
+import { IconBrandGithub } from '@tabler/icons-react';
+import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
+import PicoBootLogo from '@site/static/img/picoboot/logo.svg';
+
+<div className="hero project">
+  <div className="container">
+    <div className="row">
+    <div className="col col--8">
+    <h1 class="hero__title">PicoBoot</h1>
+      <div className="">
+        * open source
+        * uses $4 Raspberry Pi Pico board
+        * very easy installation, only 5 wires to solder or a flex cable
+        * upgradable via USB cable, without any drivers and programs
+        * automatically boots any homebrew app of your choice
+        * similar experience to ODEs like FlippyDrive or GC Loader
+      </div>
+      <a href="https://github.com/webhdx/ETH2GC" target="_blank" class="button button--lg button--primary button--icon"><IconBrandGithub stroke={2} /> View on Github</a>
+    </div>
+    <div className="col col--4 project__logo">
+        <PicoBootLogo className="picoboot-logo" />
+    </div>
+  </div>
+  </div>
+</div>
 
 ## Videos
 

@@ -4,24 +4,34 @@ sidebar_position: 2
 
 # Compiling PicoBoot firmware
 
-❗ Make sure your Raspberry Pi Pico build environment is set up on your machine.
+:::info
+Before following steps, make sure you have Raspberry Pi Pico SDK installed on your machine.
+:::
 
 Build Makefile and all required build scripts:
 ```shell
 # cmake .
 ```
 
-Then grab any DOL file you'd like to boot and run processing script:
+Starting with v0.4 release, PicoBoot introduced split payload from modchip code. Now only part of the Pico can be updated to replace starting homebrew application. This was done in order to make PicoBoot more resiliant to corrupted flash memory as well as to enforce interoperability between PicoBoot and other projects like [gekkoboot](https://github.com/redolution/gekkoboot) or [cubeboot](https://github.com/OffBroadway/cubeboot).
+
+In order to proceed you need a homebrew app of your choice that will be injected by PicoBoot during boot sequence. By default, PicoBoot is shipped with [gekkoboot](https://github.com/redolution/gekkoboot) which comes with features like assigning different *.dol files to buttons, chain loading Swiss from SD card etc. If you plan to ship your own homebrew app, you have to make sure the entrypoint address of the *.dol is **0x81300000**.
+
+Process your *.dol to produce `payload.uf2`:
 ```shell
-# ./process_ipl.py iplboot.dol ipl.h
+# ./process_ipl.py gekkoboot.dol payload.uf2
 ```
 
-Do not change `ipl.h` output file name.
+`gekkoboot.dol` can be substituted with your file
 
-Once it's ready and `ipl.h` file has been created you can build the firmware:
+Now compile PicoBoot:
 
 ```shell
 # make
 ```
 
-If everything worked you should see new file `picoboot.uf2` created in the main project directory. Now hold `BOOTSEL` button on Raspberry Pi Pico and connect USB cable. New mass storage device will appear. Copy `picoboot.uf2` file to `RPI-RP2` device. Once it's done it'll automatically eject itself. Disconnect the cable and you're all done.
+If there are no errors in the output log, you'll see 2 new files we are interested in:
+* `picoboot.uf2` - PicoBoot code update file
+* `picoboot_full.uf2` - PicoBoot code + payload update file (using *.dol file provided in the earlier step)
+
+You can now flash new firmware to your Pico board just by booting it in `BOOTSEL` mode (hold `BOOTSEL` button and plug USB cable), then moving `picoboot_full.uf2` file onto the new `RPI-RP2` device. It'll auto eject and green LED will light up on Pico.
