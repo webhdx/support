@@ -1,6 +1,13 @@
 # PicoBoot
 
-Revolutionary open source IPL modchip.
+* open source
+* uses $4 Raspberry Pi Pico board
+* very easy installation, only 5 wires to solder or a flex cable
+* upgradable via USB cable, without any drivers and programs
+* automatically boots any homebrew app of your choice
+* similar experience to ODEs like FlippyDrive or GC Loader
+
+<a href="https://github.com/webhdx/PicoBoot" class="">View on Github</a>
 
 ## Videos
 

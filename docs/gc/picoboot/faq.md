@@ -4,25 +4,21 @@ sidebar_position: 3
 
 # FAQ 
 
+### Is PicoBoot better than Flippydrive, GC Loader or CubeODE?
+
+PicoBoot in combination with Swiss and SD2SP2 v2.0 adapter achieves near perfect game compatibility and enough read throughput to play games without any stutter. This puts it in the same league as Optical Drive Emulators. PicoBoot is 4-10 times cheaper than ODEs which makes it the ultimate low budget option.
+
+### Is PicoBoot better than XenoGC?
+
+XenoGC is a drive modchip, it can only patch disc data on the fly. This means you have to use a boot disk to run Swiss and play games from an SD card. PicoBoot uses completely different approach by injecting custom payload during console boot sequence. In combination with software called [Swiss](https://github.com/emukidid/swiss-gc/) it provides all XenoGC features without requiring any boot disc.
+
 ### Can I use new Pico W board?
 
-It depends. According to the reports it works but the green LED won't light up which may be confusing at first. I haven't tested it personally therfore I can't provide you with any support at this time. It's planned to fully support Pico W and WiFi functionalities in the future.
+Pico W is supported but LED won't show any activity. This is because Pico W wires LED differently which requires special handling in software. It hasn't been implemented yet. Many people are using Pico W with a success. Pico W might become the main platform for PicoBoot in the future.
 
-### My console doesn't start at all - I see no video output at all
+### Can I use new Pico 2 board?
 
-This indicates wiring issue. Please read [Installation guide](installation-guide.md) and [Troubleshooting tips](troubleshooting.md).
-
-### My console goes to vanilla GC menu instead of Swiss
-
-Please read [Troubleshooting tips](troubleshooting.md).
-
-### I don't understand how it's better than XenoGC
-
-XenoGC is a drive modchip, it can only patch disc data on the fly. This means you have to use a boot disk to run Swiss and play games from an SD card. PicoBoot uses completely different approach - injects custom payload during console boot sequence. This means it can load any application instead of a built in GameCube menu. It will work even if your disc drive is not working.
-
-### I installed your modchip and now my console doesn't work
-
-Sorry. I do not take reponsibility for any damage done by installing this modchip. Do it at your own risk!
+Pico 2 support is planned but nothing has been done just yet.
 
 ### Can I use other RP2040 boards?
 

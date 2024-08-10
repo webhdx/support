@@ -1,32 +1,44 @@
 # Troubleshooting
 
-## My console boots to vanilla GC menu
+## Problem: Booting into stock GC menu
 
-In most cases this suggests there are issues with your SD card setup. Many people experienced this with SD2SP2 adapters which are very often terrible quality. I suggest trying different SD2SP2 adapter, preferably sideloading one (so called "GB Player compatible") which are, in my experience, more reliable. Getting one of memory card form factor adapters (SD Gecko, WiiSD) is also a good idea. These adapters pretty much always work. Also this is the adapter you want to get if you are using DOL-101 model.
+### Cause: SD Card setup
+In most cases this suggests there are issues with your SD card setup. Many people experienced this with SD2SP2 adapters which are very often terrible quality. I suggest trying different SD2SP2 adapter, preferably sideloading one (so called "GB Player compatible") which are, in my experience, more reliable. In mid 2024, a new version "SD2SP2 v2.0" was released. It improves compatibility with demanding games, making FMVs play with no stutter. I highly recommend getting "v2.0" adapters over the old ones.
 
-Starting with [PicoBoot v0.2](https://github.com/webhdx/PicoBoot/releases/tag/v0.2) release you can hold D-Pad Down during boot to see debug output from iplboot. You should see similar output as shown below:
+If your console is missing SP2 port (DOL-101, newer revision DOL-001, Panasonic Q) you can get memory card form factor adapter which is often called SD Gecko, WiiSD or GC2SD. They are functionally the same as SD2SP2 adapters, just using different port.
+
+To confirm it's indeed SD card related problem, you can hold D-Pad Down button during boot. It should show debug info screen while you hold the button. Make sure you're using the latest software version. Afromentioned debug screen will looks similar to the one below:
 
 ![IPLBoot debug output](/img/picoboot/iplboot_debug_output.png)
 
-```
-Mounted GAMECUBE as sda
-Reading /ipl.dol
-```
+If you get to show this screen, you can be assured your PicoBoot installation is 100% correct and the problem lies in SD card setup. 
 
-This means it properly detected my memory card named GAMECUBE in Memory Card Slot A, which is true because I've used SD Gecko adapter. If you don't see similar message it means your card couldn't be detected, you've used wrong file system (FAT32 is recommended) or there is no `ipl.dol` file on the memory card.
+### Cause: Cheap Chinese HDMI adapter
 
-## Orange light is on but it doesn't display anything on the screen
+Similar "booting to stock GameCube menu" issue can happen with some cheap Chinese GCVideo based HDMI adapters. It's described in detail in [here](https://github.com/ikorb/gcvideo/pull/123). Basically the console will boot to Swiss once and then it'll boot to the stock menu on next power cycle. The best solution is to stop using mentioned HDMI adapter as it's potentially harmful. Alternatively this issue can be mitigated by using 5V pin and a diode to power PicoBoot. Refer to [the wiring diagram](https://github.com/webhdx/PicoBoot/blob/main/assets/Wiring%20diagram.jpg) for more information. 
 
-First rule out any shorts between adjacent points. It's also common for GP4 and GP6&7 short to the heatsink if you soldered wires over U10 chip.
+## Problem: Orange light is on but it doesn't display anything on the screen
 
-If you are 100% sure your soldering is okay and there are no shorts, you are probably experiencing interference introduced to data lines because of the wires length. There is a golden rule: use as short wires as possible. 10 centimeters (~4 inches) is what I'd consider as a maximum recommended length. The type of wire is also very important. Use 26-28 AWG stranded wires. Single core or thick wires can easily break or in worst case rip pads from the motherboard if you put too much stress on them. If that happens it's a game over for your console and it's beyond fixable at that point. 
+### Cause: Wires are too long (very common!)
 
-PicoBoot placement also plays a huge role in reliability - install it near the fan, it's guaranteed to work in that spot. Any other placement is not guaranteed to work, especially placing PicoBoot in Serial Port 1 slot as it's confirmed to be unreliable.
+If you are 100% sure your soldering is okay and there are no shorts, you are probably experiencing interference on data lines caused by wires length. There is a golden rule: use as short wires as possible. 10 centimeters (~4 inches) is what I'd consider as a maximum recommended length. Type of the wires is also very important. Use 26-28 AWG stranded wires. Single core or thick wires can easily break or in worst case rip pads from the motherboard if you put too much stress on them. This kind of damage is often irrepairable. This is why you should practice soldering before attempting the installation. 
 
-#### Other possible solutions:
-- Try different power supply, ref. https://github.com/webhdx/PicoBoot/issues/32
+### Cause: Shorts between soldering points
 
-## Power light comes off shortly after hitting the power button
+First rule out any shorts between adjacent points. It's also common for GP4 and GP6 short to the heatsink if you soldered routed over U10 chip.
 
-This indicates shorted power line. Check your soldering and make sure wires are not touching any other point than the one mentioned in the diagram. Please be careful, there is 12V power line on the SP1 connector where you need to solder 3 wires. It's possible to short it to data lines and fry CPU.
+### Cause: Board placement 
+
+PicoBoot placement also plays a huge role in reliability - install it near the fan, it's guaranteed to work in that spot. There are some alternative locations which are not recommended by the creator. Especially placing PicoBoot in Serial Port 1 cavity for ease of upgrading has proven to be unreliable for some users.
+
+### Other things to try
+
+- Try a different power supply, ref. https://github.com/webhdx/PicoBoot/issues/32
+- Use 5V instead of 3.3V as noted in the wiring diagram.
+
+## Problem: Power light comes off shortly after hitting the power button
+
+### Cause: There is a short on 3.3V or 5V power rails
+
+This indicates shorted power line. Check your soldering and make sure wires are not touching any other point than the one mentioned in the diagram. Please be careful, there is 12V power line on the SP1 connector where you need to solder 3 wires. Accidential shorts in this area can be permanently harmful to the console.
 
