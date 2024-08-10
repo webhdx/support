@@ -36,7 +36,7 @@ PicoBoot placement also plays a huge role in reliability - install it near the f
 - Try a different power supply, ref. https://github.com/webhdx/PicoBoot/issues/32
 - Use 5V instead of 3.3V as noted in the wiring diagram.
 
-## Problem: Power light comes off shortly after hitting the power button
+## Problem: Power light comes off shortly after power up
 
 ### Cause: There is a short on 3.3V or 5V power rails
 
