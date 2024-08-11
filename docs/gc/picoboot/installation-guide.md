@@ -29,6 +29,10 @@ Format your SD card to FAT32 or exFAT. Download the latest Swiss release from [h
 
 ## Hardware installation
 
+:::info Wiring change
+Prior to PicoBoot v0.4, wiring was slightly different and most videos available online cover the old wiring method. You no longer need to bridge pins **GP6 and GP7**. If you are making fresh PicoBoot installation please follow new wiring diagram. If you are updating from older firmware, you don't have to change the wiring at all as new firmware is backwards compatible.
+:::
+
 [![Wiring diagram](/img/picoboot/wiring_diagram.jpg)](/img/picoboot/wiring_diagram.jpg)
 
 * Install PicoBoot on the fan assembly or behind front controller plate.
