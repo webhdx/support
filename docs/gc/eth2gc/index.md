@@ -16,7 +16,7 @@ import { IconBrandGithub } from '@tabler/icons-react';
       <div className="hero__subtitle">
         A series of hardware adapters utilizing Broadband&nbsp;Adapter emulation in [Swiss](https://github.com/emukidid/swiss-gc).
       </div>
-      <a href="https://github.com/webhdx/ETH2GC" target="_blank" class="button button--lg button--primary button--icon"><IconBrandGithub stroke={2} /> View on Github</a>
+      <a href="https://github.com/webhdx/ETH2GC" target="_blank" class="button button--lg button--primary button--icon"><IconBrandGithub stroke={2} /> View on GitHub</a>
     </div>
     <div className="col col--4 project__logo">
       <ThemedImage
