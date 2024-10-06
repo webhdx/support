@@ -62,16 +62,6 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      // image: 'img/docusaurus-social-card.jpg',
-      announcementBar: {
-        id: 'announcement',
-        content:
-          'It\'s live! 🥳 Documentation is currently in beta! Please report any issues to me via Discord.',
-        backgroundColor: '#fafbfc',
-        textColor: '#091E42',
-        isCloseable: false,
-      },
       navbar: {
         title: 'support.webhdx.dev',
         logo: {
