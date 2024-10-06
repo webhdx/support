@@ -1,5 +1,9 @@
 # Installation guide
 
+:::danger v0.4 firmware issues
+Some people are reporting **reliability issues** with **v0.4 firmware**. In such case please stick to v0.3 until the issue is resolved. v0.3 firmware is available [on GitHub](https://github.com/webhdx/PicoBoot/releases/tag/v0.3) together with old [installation diagram](https://raw.githubusercontent.com/webhdx/PicoBoot/refs/tags/v0.3/assets/Wiring%20diagram.jpg).
+:::
+
 :::warning
 People have a tendency to overestimate their skills after watching tutorial videos where everything seems easy. Please practice soldering on some scrap electronics before attempting PicoBoot installation.
 :::
