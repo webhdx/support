@@ -1,7 +1,5 @@
 ---
-id: sw-install-wifi
 sidebar_label: With WiFi module
-slug: /software/installation/wifi
 ---
 
 # Software installation guide for Wii Mini with WiFi module installed

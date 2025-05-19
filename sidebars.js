@@ -74,6 +74,37 @@ const sidebars = {
         },
       ],
     },
+    {
+      type: 'category',
+      label: 'Wii Mini',
+      link: {type: 'doc', id: 'wiimini/index'},
+      items: [
+        {
+          type: 'category',
+          label: 'SDRST',
+          link: {type: 'doc', id: 'wiimini/sdrst/installation/index'},
+          items: [
+            {
+              type: 'doc',
+              id: 'wiimini/sdrst/installation/hardware',
+            },
+            {
+              type: 'category',
+              label: 'Software',
+              link: {type: 'doc', id: 'wiimini/sdrst/installation/software/index'},
+              items: [
+                'wiimini/sdrst/installation/software/no-wifi-installed',
+                'wiimini/sdrst/installation/software/wifi-module-installed',
+              ]
+            },
+          ],
+        },
+        {
+          type: 'doc',
+          id: 'wiimini/wifi/index',
+        },
+      ],
+    },
   ],
 };
 export default sidebars;

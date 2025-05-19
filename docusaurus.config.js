@@ -83,6 +83,11 @@ const config = {
             label: 'PicoBoot',
           },
           {
+            position: 'left',
+            to: '/wiimini',
+            label: 'Wii Mini',
+          },
+          {
             href: 'https://store.webhdx.dev',
             label: 'Store',
             class: 'button button--outline button--primary',
@@ -112,6 +117,10 @@ const config = {
               {
                 label: 'PicoBoot',
                 to: 'gc/picoboot',
+              },
+              {
+                label: 'Wii Mini',
+                to: 'wiimini/index',
               },
             ],
           },

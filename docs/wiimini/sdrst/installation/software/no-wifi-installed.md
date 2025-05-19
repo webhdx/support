@@ -1,7 +1,5 @@
 ---
-id: sw-install-nowifi
 sidebar_label: No WiFi module
-slug: /software/installation/nowifi
 ---
 
 # Software installation guide for Wii Mini with no WiFi module

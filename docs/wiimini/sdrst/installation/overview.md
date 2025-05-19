@@ -1,5 +1,0 @@
-# Installation overview
-
-Before you start installing your Wii Mini SDRST kit you need to enable homebrew on your console. This guide won't cover that topic but you can refer to awesome guide at [https://wii.guide/bluebomb](https://wii.guide/bluebomb) on how to install Homebrew Channel. Other software like Priiloader or cIOS is irrelevant for the mod and I recommend skipping it for now. You should do it after finishing steps from software guide on this wiki.
-
-Once you have Homebrew Channel installed you can proceed with hardware modification guide here: [[Hardware installation guide]]. Software changes should follow next. There are 2 guides and you should only choose one based on the fact if you have WiFi module installed or not. If so, use [[Software guide (WiFi module installed)]], in other case go to [[Software guide (no WiFi module)]].
