@@ -1,0 +1,74 @@
+.videoGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: var(--ifm-spacing-vertical); /* Use theme variable instead of pixels */
+}
+
+.videoItem {
+  width: 100%;
+  height: 100%;
+  min-width: 0; /* Prevent grid items from expanding beyond their container */
+  margin-bottom: var(--ifm-spacing-vertical-half); /* Use theme variable instead of pixels */
+}
+
+.videoItem iframe {
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.cardLink {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  height: 100%;
+  width: 100%;
+}
+
+.cardLink:hover {
+  text-decoration: none;
+}
+
+.videoCard {
+  border: 1px solid var(--ifm-color-emphasis-200);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow: hidden;
+}
+
+.cardTitle {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 0;
+  width: 100%;
+  line-height: 1.4;
+  min-height: 2.8em;
+}
+
+.cardLink:hover .videoCard {
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 3px 6px 0 rgb(0 0 0 / 20%);
+}
+
+.cardLink:hover .cardTitle {
+  color: var(--ifm-color-primary);
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 996px) {
+  .videoGrid {
+    grid-template-columns: 1fr;
+  }
+} 
