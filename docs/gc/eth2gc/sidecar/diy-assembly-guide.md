@@ -2,13 +2,15 @@
 title: ETH2GC Sidecar DIY Assembly Guide
 ---
 
-# ETH2GC Sidecar - DIY Assembly Guide
+import Image from '@theme/IdealImage';
+import ShoppingButton from '@site/src/components/ShoppingButton';
+import Badge from '@site/src/components/Badge';
 
-:::info
-ETH2GC Sidecar is sold as a complete unit or a DIY kit. You can purchase both kits [at my store](https://store.webhdx.dev/products/eth2gc-sidecar-broadband-adapter-emulator). Complete unit does not require any assembly.
+:::secondary[Archived content]
+This guide is archived since ETH2GC Sidecar DIY kits are no longer available for purchase. The content remains available as a reference for users who previously purchased these kits.
 :::
 
-# Prerequisites
+## Prerequisites
 
 * ETH2GC Sidecar DIY kit
 * Breakout PCB
@@ -22,26 +24,24 @@ ETH2GC Sidecar is sold as a complete unit or a DIY kit. You can purchase both ki
 
 | Part          | Links                                                                                                                                                              |
 |:-------------:|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| ![ENC28J60 MINI](/img/eth2gc/ENC28J60_Mini.jpg)<br/>**ENC28J60 MINI** | [AliExpress (affiliate)](https://s.click.aliexpress.com/e/_DlkjMGp)<br/>[Amazon US](https://www.amazon.com/ENC28J60-Ethernet-Network-Module-Arduino/dp/B07KNTHR84) |
+| <Image img={require('/img/eth2gc/ENC28J60_Mini.jpg')} alt='ENC28J60 MINI' /><br/>**ENC28J60 MINI** | <ShoppingButton url="https://s.click.aliexpress.com/e/_DlkjMGp" /><br/><ShoppingButton url="https://www.amazon.com/ENC28J60-Ethernet-Network-Module-Arduino/dp/B07KNTHR84" /> |
 
-
-
-# Soldering
+## Soldering
 
 Reference below photos for connectors orientation.
 
-![Breakout PCB Front](/img/eth2gc/build-guide/Sidecar_Breakout_PCB_Front.jpeg)
-![Breakout PCB Back](/img/eth2gc/build-guide/Sidecar_Breakout_PCB_Back.jpeg)
+<Image img={require('/img/eth2gc/build-guide/Sidecar_Breakout_PCB_Front.jpeg')} alt='Breakout PCB Front' />
+<Image img={require('/img/eth2gc/build-guide/Sidecar_Breakout_PCB_Back.jpeg')} alt='Breakout PCB Back' />
 
-![Main PCB Front](/img/eth2gc/build-guide/Sidecar_Main_PCB_Front.jpeg)
-![Main PCB Back](/img/eth2gc/build-guide/Sidecar_Main_PCB_Back.jpeg)
+<Image img={require('/img/eth2gc/build-guide/Sidecar_Main_PCB_Front.jpeg')} alt='Main PCB Front' />
+<Image img={require('/img/eth2gc/build-guide/Sidecar_Main_PCB_Back.jpeg')} alt='Main PCB Back' />
 
 * Leaded solder is recommended - it's easier to work with. 
 * Use temperature controller soldering iron set to 330&deg;C (~620&deg;F). 
 * Use flux - it really helps solder to flow.
 * Be careful to not melt solder on gold edge connector. You can protect it with kapton tape.
 
-# Assembly
+## Assembly
 
 :::warning
 Some **ENC28J60 Mini** boards might be wider than others. If your module does not fit, sand down edges of the board with sand paper.
@@ -53,7 +53,7 @@ Some **ENC28J60 Mini** boards might be wider than others. If your module does no
 4. Secure main PCB with 4 M2 self tapping screws.
 5. Mount bottom case cover, align both parts first and make sure they fit together. Lightly press down until both pieces click together. **Do not use excessive force!** 
 
-![Attaching PCBs together](/img/eth2gc/build-guide/Sidecar_Main_PCB_Attached.jpeg)
-![Ataching ENC28J60 module](/img/eth2gc/build-guide/Sidecar_Main_PCB_ENC_Attached.jpeg)
-![Assembling case](/img/eth2gc/build-guide/Sidecar_Assembly_1.jpeg)
-![Final assembly](/img/eth2gc/build-guide/Sidecar_Assembly_Final.jpeg)
+<Image img={require('/img/eth2gc/build-guide/Sidecar_Main_PCB_Attached.jpeg')} alt='Attaching PCBs together' />
+<Image img={require('/img/eth2gc/build-guide/Sidecar_Main_PCB_ENC_Attached.jpeg')} alt='Attaching ENC28J60 module' />
+<Image img={require('/img/eth2gc/build-guide/Sidecar_Assembly_1.jpeg')} alt='Assembling case' />
+<Image img={require('/img/eth2gc/build-guide/Sidecar_Assembly_Final.jpeg')} alt='Final assembly' />

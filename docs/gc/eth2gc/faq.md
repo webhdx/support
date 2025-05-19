@@ -2,6 +2,9 @@
 title: FAQ
 ---
 
+import ShoppingButton from '@site/src/components/ShoppingButton';
+import Image from '@theme/IdealImage';
+
 # FAQ
 
 ### Does ETH2GC work standalone like the original Broadband Adapter?
@@ -18,8 +21,8 @@ No. Both devices use the same port. You need a different adapter which interface
 
 | Adapter                                    | Links                                                   |
 |:------------------------------------------:|---------------------------------------------------------|
-| ![WiiSD](/img/sd/wiisd.jpg)<br />**WiiSD** | [AliExpress](https://s.click.aliexpress.com/e/_Dm949Gp) |
-| ![GC2SD](/img/sd/gc2sd.jpg)<br />**GC2SD** | [AliExpress](https://s.click.aliexpress.com/e/_DFF8UOt) |
+| <Image img={require('/img/sd/wiisd.jpg')} alt='WiiSD' /><br />**WiiSD** | <ShoppingButton url="https://s.click.aliexpress.com/e/_Dm949Gp" /> |
+| <Image img={require('/img/sd/gc2sd.jpg')} alt='GC2SD' /><br />**GC2SD** | <ShoppingButton url="https://s.click.aliexpress.com/e/_DFF8UOt" /> |
 
 ### Are there any limitations when using ETH2GC?
 Yes. As of today, Broadband Adapter emulation feature is incompatible with loading games using physical discs. Additionally, the ENC28J60 driver is not capable of providing speeds required to stream game ISOs from network-attached storage (like RetroNAS).
