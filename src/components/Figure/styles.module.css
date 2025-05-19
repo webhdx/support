@@ -1,0 +1,14 @@
+.figureContainer {
+  text-align: center;
+  overflow: hidden;
+  border-radius: var(--ifm-card-border-radius);
+  box-shadow: 0 1.5px 3px 0 rgb(0 0 0 / 15%);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  font-style: italic;
+}
+
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}

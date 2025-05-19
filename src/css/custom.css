@@ -9,12 +9,12 @@
   --ifm-color-primary: #535486;
   --ifm-color-primary-dark: #535486;
   --ifm-color-primary-darker: #2c2d47;
-  --ifm-color-primary-darkest: #050508;
+  --ifm-color-primary-darkest: #29788c;
   --ifm-color-primary-light: #535486;
   --ifm-color-primary-lighter: #898ab6;
   --ifm-color-primary-lightest: #c8c8dd;
   --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -75,4 +75,90 @@
   .project__logo svg, .project__logo img {
     margin: calc(var(--ifm-image-alignment-padding) * 2) 0;
   }
+}
+
+/* Hero component responsive styles */
+.hero__row {
+  align-items: center;
+}
+
+.hero__logo {
+  display: flex;
+  justify-content: center;
+}
+
+.hero__logo .picoboot-logo {
+  max-width: 80%;
+  max-height: 320px;
+  width: auto;
+}
+
+.hero__features {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 996px) {
+  .hero__row {
+    flex-direction: column-reverse;
+  }
+  
+  .hero__content,
+  .hero__logo {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  
+  .hero__logo {
+    margin-bottom: 2rem;
+  }
+  
+  .hero__logo .picoboot-logo {
+    max-width: 250px;
+    margin: 0 auto;
+  }
+}
+
+.hero__title h2 {
+  font-size: 3rem;
+  margin: 0;
+  margin-bottom: calc(var(--ifm-h1-vertical-rhythm-bottom) * var(--ifm-leading));
+}
+
+.hero.project {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Ensure ::before pseudo-element is visible */
+.hero.project::before {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 300%;
+  height: 300%;
+  background-size: 100px 100px;
+  background-repeat: space;
+  opacity: 0.05;
+  filter: grayscale(100%);
+  transform: rotate(45deg);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Hero component background styles for PicoBoot */
+.hero.project.picoboot::before {
+  background-image: url('/img/picoboot/logo.svg');
+}
+
+/* Hero component background styles for ETH2GC */
+.hero.project.eth2gc::before {
+  background-image: url('/img/eth2gc/eth2gc.svg');
+  background-size: 100px auto;
+  padding: 0;
+}
+
+[data-theme='dark'] .hero.project::before {
+  filter: invert(1) grayscale(100%);
 }

@@ -2,8 +2,8 @@ import { IconBrandGithub } from '@tabler/icons-react';
 
 export default function IconGitHubItem() {
     return (
-        <div class="header-link">
-            <a href="https://github.com/webhdx/support" target="_blank" class="clean-btn header-link-button">
+        <div className="header-link">
+            <a href="https://github.com/webhdx/support" target="_blank" className="clean-btn header-link-button">
                 <IconBrandGithub stroke={2} />
             </a>
         </div>

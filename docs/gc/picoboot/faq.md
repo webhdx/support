@@ -1,5 +1,6 @@
 ---
 sidebar_position: 3
+description: "Answers to frequently asked questions about PicoBoot, including comparisons with other modchips, compatibility with different Raspberry Pi boards, and installation considerations."
 ---
 
 # FAQ 

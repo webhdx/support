@@ -1,37 +1,48 @@
 ---
 sidebar_position: 2
+description: "Guide for compiling PicoBoot firmware from source, including development environment setup using VS Code and Docker, building instructions, and flashing procedures."
 ---
 
-# Compiling PicoBoot firmware
+# Compile PicoBoot firmware
 
 :::info
-Before following steps, make sure you have Raspberry Pi Pico SDK installed on your machine.
+The recommended way to build PicoBoot is using VS Code with the provided devcontainer environment. This ensures all dependencies are properly set up and consistent across different development machines.
 :::
 
-Build Makefile and all required build scripts:
+## Development Environment Setup
+
+1. Install [VS Code](https://code.visualstudio.com/)
+2. Install [Docker](https://www.docker.com/products/docker-desktop)
+3. Install [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension in VS Code
+4. Clone the PicoBoot repository
+5. Open the project in VS Code
+6. When prompted, click "Reopen in Container" or use Command Palette (F1) and select "Remote-Containers: Reopen in Container"
+
+The devcontainer includes all necessary dependencies including the Raspberry Pi Pico SDK.
+
+## Building PicoBoot
+
+Starting with v0.4 release, PicoBoot introduced split payload from modchip code. Now only part of the Pico can be updated to replace starting homebrew application. This was done in order to make PicoBoot more resilient to corrupted flash memory as well as to enforce interoperability between PicoBoot and other projects like [gekkoboot](https://github.com/redolution/gekkoboot) or [Swiss](https://github.com/emukidid/swiss-gc).
+
+To build PicoBoot:
+
+1. Place your `payload.dol` file in the project root directory
+   - The entrypoint address of the *.dol must be **0x81300000**
+   - **gekkoboot** is recommended and this is what PicoBoot releases are shipped with
+
+2. Run the build script:
 ```shell
-# cmake .
+./tools/build.sh
 ```
 
-Starting with v0.4 release, PicoBoot introduced split payload from modchip code. Now only part of the Pico can be updated to replace starting homebrew application. This was done in order to make PicoBoot more resiliant to corrupted flash memory as well as to enforce interoperability between PicoBoot and other projects like [gekkoboot](https://github.com/redolution/gekkoboot) or [cubeboot](https://github.com/OffBroadway/cubeboot).
+After successful build, you'll find the following files in the `dist/` directory:
+* `payload_*.uf2` - payload file for partial update
+* `picoboot_*.uf2` - modchip code for partial udpate
+* `picoboot_full_*.uf2` - full firmware + payload file, recommended for end-users and testing
 
-In order to proceed you need a homebrew app of your choice that will be injected by PicoBoot during boot sequence. By default, PicoBoot is shipped with [gekkoboot](https://github.com/redolution/gekkoboot) which comes with features like assigning different *.dol files to buttons, chain loading Swiss from SD card etc. If you plan to ship your own homebrew app, you have to make sure the entrypoint address of the *.dol is **0x81300000**.
+## Flashing the Firmware
 
-Process your *.dol to produce `payload.uf2`:
-```shell
-# ./process_ipl.py gekkoboot.dol payload.uf2
-```
-
-`gekkoboot.dol` can be substituted with your file
-
-Now compile PicoBoot:
-
-```shell
-# make
-```
-
-If there are no errors in the output log, you'll see 2 new files we are interested in:
-* `picoboot.uf2` - PicoBoot code update file
-* `picoboot_full.uf2` - PicoBoot code + payload update file (using *.dol file provided in the earlier step)
-
-You can now flash new firmware to your Pico board just by booting it in `BOOTSEL` mode (hold `BOOTSEL` button and plug USB cable), then moving `picoboot_full.uf2` file onto the new `RPI-RP2` device. It'll auto eject and green LED will light up on Pico.
+To flash new firmware to your Pico board:
+1. Boot the Pico in `BOOTSEL` mode (hold `BOOTSEL` button and plug USB cable)
+2. Copy `picoboot_full_*.uf2` file to the new `RPI-RP2` (or `RP2350`) device
+3. The device will auto-eject and the green LED will light up on Pico

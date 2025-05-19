@@ -1,45 +1,81 @@
-# Installation guide
+---
+title: Install PicoBoot
+description: "Comprehensive installation guide for PicoBoot modchip, including required materials, step-by-step instructions for flashing firmware, preparing SD card, and hardware installation."
+---
 
-:::danger v0.4 firmware issues
-Some people are reporting **reliability issues** with **v0.4 firmware**. In such case please stick to v0.3 until the issue is resolved. v0.3 firmware is available [on GitHub](https://github.com/webhdx/PicoBoot/releases/tag/v0.3) together with old [installation diagram](https://raw.githubusercontent.com/webhdx/PicoBoot/refs/tags/v0.3/assets/Wiring%20diagram.jpg).
+import ShoppingButton from '@site/src/components/ShoppingButton';
+import Figure from '@site/src/components/Figure';
+
+# Install PicoBoot
+
+:::danger Firmware Version Warning
+A small percentage of **v0.4** firmware users reported reliability issues. If you experience problems, please use v0.3.x firmware instead:
+- Download the latest v0.3.x release from [GitHub](https://github.com/webhdx/PicoBoot/releases/tag/v0.3.1)
+- Wire PicoBoot according to [legacy v0.3 wiring diagram](https://raw.githubusercontent.com/webhdx/PicoBoot/refs/tags/v0.3/assets/Wiring%20diagram.jpg)
 :::
 
-:::warning
-People have a tendency to overestimate their skills after watching tutorial videos where everything seems easy. Please practice soldering on some scrap electronics before attempting PicoBoot installation.
+:::warning Soldering Experience Required
+PicoBoot is considered an easy soldering modification. However, there is significant evidence online showing that inexperienced users can easily damage their console beyond repair. Do not overestimate your soldering skills. Practice soldering on scrap electronics before attempting this installation.
 :::
 
-## Prerequisites
+## Required Materials
 
-You obviously need a soldering iron, soldering wire, flux. For the wires I recommend 26-28 AWG gauge. A good recommended soldering station is T12 ([Amazon](https://amzn.to/3bgBbOW), [AliExpress](https://s.click.aliexpress.com/e/_DEiTBWJ)). It has Voultar's seal of approval for installing many console mods!
+Affiliate links below help support the project at no extra cost to you. Thank you for your support! 🙏
 
-* Soldering iron
-* Soldering wire, preferably lead based "Sn60Pb40"
-* Raspberry Pi Pico ([AliExpress](https://s.click.aliexpress.com/e/_DmWBvwb))
-* SD card adapter (choose one):
-    - SD Gecko or WiiSD ([AliExpress](https://s.click.aliexpress.com/e/_Dm43n6J)), GC2SD ([AliExpress](https://s.click.aliexpress.com/e/_DCGkoQf))
-    - SD2SP2 ([AliExpress](https://s.click.aliexpress.com/e/_DCQ6XUf)). Get new **v2.0** version, it's faster.
-* FAT32 formatted SD card
-* Good quality wires, 26-28 AWG gauge ([AliExpress](https://s.click.aliexpress.com/e/_DldVJQr))
+### Essential Tools
+- Soldering iron like T12 station (<ShoppingButton url="https://s.click.aliexpress.com/e/_opdkDGf" />) or PINE64 (<ShoppingButton url="https://s.click.aliexpress.com/e/_oENPHxd" />)
+- Soldering wire: Sn60Pb40 lead-based is recommended (<ShoppingButton url="https://s.click.aliexpress.com/e/_opePFor" />)
+- Flux (<ShoppingButton url="https://s.click.aliexpress.com/e/_omFsBsn" />)
+- 26-28 AWG gauge wires (<ShoppingButton url="https://s.click.aliexpress.com/e/_om0Bpt1" />)
 
-Links above are affiliated and I get a small commission with no additional cost for you. Thanks to everyone who used links above 🙏
+### Hardware Components
+1. Compatible Raspberry Pi board (<ShoppingButton url="https://s.click.aliexpress.com/e/_oCdaL9v" />):
+   - Raspberry Pi Pico
+   - Raspberry Pi Pico W
+   - Raspberry Pi Pico 2
+   - Raspberry Pi Pico 2 W
+2. SD card adapter like GC2SD, SD Gecko, WiiSD or SD2SP2:
+   - SD2SP2: If you have DOL-001 with Serial Port 2 (<ShoppingButton url="https://s.click.aliexpress.com/e/_olfXufh" />)
+   - GC2SD/WiiSD/SD Gecko: If you have DOL-001 with Serial Port 2 (<ShoppingButton url="https://s.click.aliexpress.com/e/_onzxcOR" />)
+3. FAT32 formatted SD card
 
-## Flashing Raspberry Pi Pico board
-
-Go to [the latest release page](https://github.com/webhdx/PicoBoot/releases/latest) and download `picoboot_full.uf2` file. Now connect Raspberry Pi Pico board to your computer while holding down `BOOTSEL` button. If it's been done correctly you'll see `RPI-RP2` mass storage device show up. Drag and drop `picoboot_full.uf2` file to that device. It'll automatically eject and green LED will light up if it was programmed correctly. Unplug USB cable from Pico and proceed with hardware installation.
-
-## Preparing SD card
-
-Format your SD card to FAT32 or exFAT. Download the latest Swiss release from [here](https://github.com/emukidid/swiss-gc/releases/latest) and grab `swiss_rXXXX.dol` file, rename it to `ipl.dol` and copy to the root of your SD card.
-
-## Hardware installation
-
-:::info Wiring change
-Prior to PicoBoot v0.4, wiring was slightly different and most videos available online cover the old wiring method. You no longer need to bridge pins **GP6 and GP7**. If you are making fresh PicoBoot installation please follow new wiring diagram. If you are updating from older firmware, you don't have to change the wiring at all as new firmware is backwards compatible.
+:::note Semi-passive SD card adapters
+Nowadays there are new, upgraded SD card adapter utilizing aditional discrete logic component to greatly improve reading speeds. All above links are for semi-passive adapters.
 :::
 
-[![Wiring diagram](/img/picoboot/wiring_diagram.jpg)](/img/picoboot/wiring_diagram.jpg)
+## Installation Steps
 
-* Install PicoBoot on the fan assembly or behind front controller plate.
-* Use official Raspberry Pi Pico (W) boards only.
-* Pay attention to the wires! 26 AWG stranded silicone wires are my best recommendation. This is very important.
-* To remove the heatsink easily, warm up the console for 10-15 minutes just by playing some game. Once it's up to the temperature, the heatsink should come off much easioer. You can twist it back and forth a few times to make thermal pads loosen up. Do not use prying tools. Be careful to not knock off any components from the board, especially DA15 component seems to be often ripped out. 
+### Flash the Raspberry Pi Pico
+1. Download correct UF2 file from [the latest release](https://github.com/webhdx/PicoBoot/releases/latest)
+   - `picoboot_full_pico.uf2`: if you are using Raspberry Pi Pico or Pico W board
+   - `picoboot_full_pico2.uf2`: if you are using Raspberry Pi Pico 2 or Pico 2 W board
+2. Hold `BOOTSEL` button and connect the board to your computer
+3. Look for `RPI-RP2` or `RP2350` mass storage device
+4. Drag and drop `*.uf2` file onto the device
+5. Wait for automatic ejection and green LED confirmation
+6. Unplug USB cable
+
+### Prepare the SD Card
+1. Format SD card to FAT32 or exFAT
+2. Download the latest Swiss version from [releases page](https://github.com/emukidid/swiss-gc/releases/latest)
+3. Rename `swiss_rXXXX.dol` to `ipl.dol`
+4. Copy `ipl.dol` to SD card root directory
+
+### Hardware Installation
+
+:::info Wiring Update
+**Important Change:** PicoBoot v0.4+ has updated wiring requirements and briding pins GP6 and GP7 is no longer required. New firmware is backwards compatible with legacy wiring but you should follow the new wiring diagram below.
+:::
+
+<Figure img={require('/img/picoboot/wiring_diagram.jpg')} alt='Wiring diagram' caption='Wiring diagram' />
+
+### Installation Tips
+- Mount PicoBoot on fan assembly or behind front controller plate
+- Use only official Raspberry Pi Pico (W) or Pico 2 (W) boards
+- For heatsink removal:
+  - Warm up console by playing a game for 10-15 minutes
+  - Gently twist heatsink back and forth, be careful not to damage DA15 component on the motherboard
+  - Avoid using prying tools
+- After installation:
+  - Console should boot directly to Swiss or stop on gekkoboot debug screen
+  - If you see stock GameCube menu or nothing displays, refer to [Troubleshooting Guide](./troubleshooting.md)

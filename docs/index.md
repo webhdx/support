@@ -5,6 +5,7 @@ hide_table_of_contents: true
 ---
 
 import DocCardList from "@theme/DocCardList";
+import Image from "@theme/IdealImage";
 
 ### GameCube
 
@@ -31,4 +32,4 @@ import DocCardList from "@theme/DocCardList";
 ## Join Discord server
 If you haven't found solution to your problem here, you should join our Discord server for support from community members.  
 
-[![](https://dcbadge.vercel.app/api/server/fEhyWRPCmb)](https://click.webhdx.dev/discord)
+<Image img={require('https://dcbadge.vercel.app/api/server/fEhyWRPCmb')} alt='Discord Badge' />
