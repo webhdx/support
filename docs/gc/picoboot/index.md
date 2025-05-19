@@ -42,6 +42,27 @@ import PicoBootLogo from '@site/static/img/picoboot/logo.svg';
 
 ```mdx-code-block
 import DocCardList from '@theme/DocCardList';
+import HeroSection from '@site/src/components/HeroSection';
+
+<HeroSection
+  className="picoboot"
+  title="PicoBoot"
+  features={[
+    "open source",
+    "uses $4 Raspberry Pi Pico board",
+    "very easy installation, only 5 wires to solder or a flex cable",
+    "upgradable via USB cable, without any drivers and programs",
+    "automatically boots any homebrew app of your choice",
+    "similar experience to ODEs like FlippyDrive or GC Loader",
+  ]}
+  githubUrl="https://github.com/webhdx/PicoBoot"
+  logoSrc={{
+    light: '/img/picoboot/logo.svg',
+    dark: '/img/picoboot/logo.svg',
+  }}
+/>
+
+## Documentation
 
 <DocCardList />
 ```
