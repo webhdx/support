@@ -4,7 +4,7 @@ description: "Comprehensive installation guide for PicoBoot modchip, including r
 ---
 
 import ShoppingButton from '@site/src/components/ShoppingButton';
-import Image from '@theme/IdealImage';
+import Figure from '@site/src/components/Figure';
 
 # Install PicoBoot
 
@@ -67,7 +67,7 @@ Nowadays there are new, upgraded SD card adapter utilizing aditional discrete lo
 **Important Change:** PicoBoot v0.4+ has updated wiring requirements and briding pins GP6 and GP7 is no longer required. New firmware is backwards compatible with legacy wiring but you should follow the new wiring diagram below.
 :::
 
-<Image img={require('/img/picoboot/wiring_diagram.jpg')} alt='Wiring diagram' />
+<Figure img={require('/img/picoboot/wiring_diagram.jpg')} alt='Wiring diagram' caption='Wiring diagram' />
 
 ### Installation Tips
 - Mount PicoBoot on fan assembly or behind front controller plate
