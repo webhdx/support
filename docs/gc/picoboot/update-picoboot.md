@@ -1,3 +1,8 @@
+---
+title: Update PicoBoot
+description: "Simple instructions for updating PicoBoot firmware using a PC and micro USB cable, with important safety warnings."
+---
+
 # Update PicoBoot
 
 :::danger
