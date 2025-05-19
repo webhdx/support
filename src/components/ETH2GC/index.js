@@ -13,13 +13,13 @@ function ETH2GCCard({name, image, purchase_url, diy_url, nic, description}) {
       <div className={clsx('card')}>
         <div className={clsx('card__image')}>
           <Link to={purchase_url}>
-            <Image img={image} alt={`${name}'s image`} />
+            <Image img={image} alt={`${name}'s photo`} />
           </Link>
         </div>
         <div className="card__body">
           <Heading as="h2" className="margin-bottom--none">{name}</Heading>
           <div className="margin-bottom--md margin-top--sm">
-            <span class="badge badge--secondary">{nic}</span>
+            <span className="badge badge--secondary">{nic}</span>
           </div>
           {description}
         </div>
