@@ -39,6 +39,9 @@ const sidebars = {
                   type: 'doc',
                   id: 'gc/eth2gc/sidecar/diy-assembly-guide',
                   label: 'DIY Assembly Guide',
+                  customProps: {
+                    badge: { text: 'Archive', style: 'secondary', uppercase: true }
+                  }
                 },
               ],
             },
@@ -63,10 +66,10 @@ const sidebars = {
           link: {type: 'doc', id: 'gc/picoboot/index'},
           items: [
             'gc/picoboot/installation-guide',
-            'gc/picoboot/faq',
-            'gc/picoboot/troubleshooting',
             'gc/picoboot/update-picoboot',
+            'gc/picoboot/troubleshooting',
             'gc/picoboot/compiling-firmware',
+            'gc/picoboot/faq',
           ]
         },
       ],
