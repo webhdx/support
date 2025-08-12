@@ -37,6 +37,7 @@ const config = {
   },
   future: {
     experimental_faster: true,
+    v4: true,
   },
   presets: [
     [
@@ -147,16 +148,27 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
+      zoom: {
+        selector: 'img.image-zoom, .markdown :not(em) > img',
+        background: {
+          light: 'rgb(255, 255, 255)',
+          dark: 'rgb(50, 50, 50)'
+        },
+        config: {
+          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
+        },
+      },
     }),
     
     plugins: [
+      'docusaurus-plugin-image-zoom',
       [
         '@docusaurus/plugin-ideal-image',
         {
           quality: 70,
-          max: 1030, // max resized image's size.
-          min: 640, // min resized image's size. if original is lower, use that size.
-          steps: 2, // the max number of images generated between min and max (inclusive)
+          max: 3000, // max resized image's size.
+          min: 1000, // min resized image's size. if original is lower, use that size.
+          steps: 4, // the max number of images generated between min and max (inclusive)
           disableInDev: false,
         },
       ],
