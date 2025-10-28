@@ -33,7 +33,7 @@ Affiliate links below help support the project at no extra cost to you. Thank yo
    - Raspberry Pi Pico
    - Raspberry Pi Pico W
    - Raspberry Pi Pico 2
-   - Raspberry Pi Pico 2 W
+   - Raspberry Pi Pico 2 W (recommended)
 2. SD card adapter like GC2SD, SD Gecko, WiiSD or SD2SP2:
    - SD2SP2: If you have DOL-001 with Serial Port 2 (<ShoppingButton url="https://s.click.aliexpress.com/e/_olfXufh" />)
    - GC2SD/WiiSD/SD Gecko: If you have DOL-001 with Serial Port 2 (<ShoppingButton url="https://s.click.aliexpress.com/e/_onzxcOR" />)
