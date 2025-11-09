@@ -56,7 +56,7 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: 'https://github.com/webhdx/support/tree/main/',
           routeBasePath: '/',
-          showLastUpdateAuthor: true,
+          showLastUpdateAuthor: false,
           showLastUpdateTime: true,
         },
         blog: false,
