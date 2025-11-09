@@ -32,4 +32,4 @@ import Image from "@theme/IdealImage";
 ## Join Discord server
 If you haven't found solution to your problem here, you should join our Discord server for support from community members.  
 
-<Image img="https://dcbadge.vercel.app/api/server/fEhyWRPCmb" alt='Discord Badge' />
+<Image img="https://dcbadge.limes.pink/api/server/fEhyWRPCmb" alt='Discord Badge' />
