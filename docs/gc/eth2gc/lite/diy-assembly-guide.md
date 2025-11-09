@@ -2,12 +2,11 @@
 title: ETH2GC Lite DIY Assembly Guide
 ---
 
-import Image from '@theme/IdealImage';
 import ShoppingButton from '@site/src/components/ShoppingButton';
 import Figure from '@site/src/components/Figure';
 
-:::info
-If you don't want to purchase parts separately, you can buy DIY kit from [my store](https://store.webhdx.dev/products/eth2gc-lite-broadband-adapter-emulator).
+:::secondary[Archived content]
+This guide is archived since ETH2GC Lite DIY kits are no longer available for purchase. The content remains available as a reference for users who previously purchased these kits.
 :::
 
 ## Prerequisites
