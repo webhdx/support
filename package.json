@@ -28,13 +28,13 @@
     "docusaurus-plugin-image-zoom": "^3.0.1",
     "prism-react-renderer": "^2.4.1",
     "react": "^19.2.0",
-    "react-dom": "^19.2.0",
-    "textlint": "^15.2.3",
-    "textlint-rule-no-dead-link": "^6.0.1"
+    "react-dom": "^19.2.0"
   },
   "devDependencies": {
     "@docusaurus/module-type-aliases": "^3.9.2",
-    "@docusaurus/types": "^3.9.2"
+    "@docusaurus/types": "^3.9.2",
+    "textlint": "^15.2.3",
+    "textlint-rule-alive-link": "^0.1.2"
   },
   "browserslist": {
     "production": [
@@ -49,6 +49,6 @@
     ]
   },
   "engines": {
-    "node": ">=18.0"
+    "node": ">=22.0"
   }
 }

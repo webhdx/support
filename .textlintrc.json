@@ -2,7 +2,7 @@
   "plugins": {},
   "filters": {},
   "rules": {
-    "no-dead-link": {
+    "alive-link": {
       "ignore": [
         "https://click.webhdx.dev/discord",
         "https://github.com/*/*/releases/latest"

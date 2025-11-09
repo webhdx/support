@@ -7,6 +7,7 @@
 # Generated files
 .docusaurus
 .cache-loader
+textlint.sarif
 
 # Misc
 .DS_Store
