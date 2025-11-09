@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: 22
       - run: npm ci
-      - run: npx textlint -f @microsoft/eslint-formatter-sarif -o textlint.sarif || exit 0 # workaround https://github.com/textlint/textlint/issues/103
+      - run: npx textlint -f @microsoft/eslint-formatter-sarif -o textlint.sarif . || exit 0 # workaround https://github.com/textlint/textlint/issues/103
       - name: Upload SARIF file
         uses: github/codeql-action/upload-sarif@v4
         with:
