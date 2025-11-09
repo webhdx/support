@@ -15,7 +15,7 @@ This issue typically indicates problems with your SD card configuration. Many us
 
 For consoles without an SP2 port (DOL-101, newer revision DOL-001, Panasonic Q), you can use a memory card form factor adapter, commonly known as SD Gecko, WiiSD, or GC2SD. These adapters provide the same functionality as SD2SP2 adapters but use a different port. Similar to SD2SP2 adapters above, these also come in semi-passive type improving performance.
 
-<Figure img={require('/img/picoboot/gekkoboot.jpg')} alt='gekkoboot debug output' caption='gekkoboot debug output' />
+<Figure img={require('/img/picoboot/gekkoboot.jpg')} alt='gekkoboot debug output' caption='gekkoboot debug output' zoom />
 
 If you can access this screen, your PicoBoot installation is confirmed correct, and the issue lies within the SD card setup.
 

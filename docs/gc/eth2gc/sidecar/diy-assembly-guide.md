@@ -2,7 +2,6 @@
 title: ETH2GC Sidecar DIY Assembly Guide
 ---
 
-import Image from '@theme/IdealImage';
 import ShoppingButton from '@site/src/components/ShoppingButton';
 import Badge from '@site/src/components/Badge';
 import Figure from '@site/src/components/Figure';
@@ -31,11 +30,11 @@ This guide is archived since ETH2GC Sidecar DIY kits are no longer available for
 
 Reference below photos for connectors orientation.
 
-<Figure img={require('/img/eth2gc/build-guide/Sidecar_Breakout_PCB_Front.jpeg')} alt='Breakout PCB Front' caption='Breakout PCB Front' />
-<Figure img={require('/img/eth2gc/build-guide/Sidecar_Breakout_PCB_Back.jpeg')} alt='Breakout PCB Back' caption='Breakout PCB Back' />
+<Figure img={require('/img/eth2gc/build-guide/Sidecar_Breakout_PCB_Front.jpeg')} alt='Breakout PCB Front' caption='Breakout PCB Front' zoom />
+<Figure img={require('/img/eth2gc/build-guide/Sidecar_Breakout_PCB_Back.jpeg')} alt='Breakout PCB Back' caption='Breakout PCB Back' zoom />
 
-<Figure img={require('/img/eth2gc/build-guide/Sidecar_Main_PCB_Front.jpeg')} alt='Main PCB Front' caption='Main PCB Front' />
-<Figure img={require('/img/eth2gc/build-guide/Sidecar_Main_PCB_Back.jpeg')} alt='Main PCB Back' caption='Main PCB Back' />
+<Figure img={require('/img/eth2gc/build-guide/Sidecar_Main_PCB_Front.jpeg')} alt='Main PCB Front' caption='Main PCB Front' zoom />
+<Figure img={require('/img/eth2gc/build-guide/Sidecar_Main_PCB_Back.jpeg')} alt='Main PCB Back' caption='Main PCB Back' zoom />
 
 * Leaded solder is recommended - it's easier to work with. 
 * Use temperature controller soldering iron set to 330&deg;C (~620&deg;F). 
@@ -54,7 +53,7 @@ Some **ENC28J60 Mini** boards might be wider than others. If your module does no
 4. Secure main PCB with 4 M2 self tapping screws.
 5. Mount bottom case cover, align both parts first and make sure they fit together. Lightly press down until both pieces click together. **Do not use excessive force!** 
 
-<Figure img={require('/img/eth2gc/build-guide/Sidecar_Main_PCB_Attached.jpeg')} alt='Attaching PCBs together' caption='Attaching PCBs together' />
-<Figure img={require('/img/eth2gc/build-guide/Sidecar_Main_PCB_ENC_Attached.jpeg')} alt='Attaching ENC28J60 module' caption='Attaching ENC28J60 module' />
-<Figure img={require('/img/eth2gc/build-guide/Sidecar_Assembly_1.jpeg')} alt='Assembling case' caption='Assembling case' />
-<Figure img={require('/img/eth2gc/build-guide/Sidecar_Assembly_Final.jpeg')} alt='Final assembly' caption='Final assembly' />
+<Figure img={require('/img/eth2gc/build-guide/Sidecar_Main_PCB_Attached.jpeg')} alt='Attaching PCBs together' caption='Attaching PCBs together' zoom />
+<Figure img={require('/img/eth2gc/build-guide/Sidecar_Main_PCB_ENC_Attached.jpeg')} alt='Attaching ENC28J60 module' caption='Attaching ENC28J60 module' zoom />
+<Figure img={require('/img/eth2gc/build-guide/Sidecar_Assembly_1.jpeg')} alt='Assembling case' caption='Assembling case' zoom />
+<Figure img={require('/img/eth2gc/build-guide/Sidecar_Assembly_Final.jpeg')} alt='Final assembly' caption='Final assembly' zoom />

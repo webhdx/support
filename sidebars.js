@@ -41,7 +41,7 @@ const sidebars = {
                   label: 'DIY Assembly Guide',
                   customProps: {
                     badge: { text: 'Archive', style: 'secondary', uppercase: true }
-                  }
+                  },
                 },
               ],
             },
@@ -55,6 +55,9 @@ const sidebars = {
                   type: 'doc',
                   id: 'gc/eth2gc/lite/diy-assembly-guide',
                   label: 'DIY Assembly Guide',
+                  customProps: {
+                    badge: { text: 'Archive', style: 'secondary', uppercase: true }
+                  },
                 },
               ],
             },

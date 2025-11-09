@@ -26,7 +26,6 @@ const config = {
   trailingSlash: false,
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -38,6 +37,12 @@ const config = {
   future: {
     experimental_faster: true,
     v4: true,
+  },
+  markdown: {
+    hooks: {
+      onBrokenMarkdownImages: 'throw',
+      onBrokenMarkdownLinks: 'throw',
+    }
   },
   presets: [
     [
@@ -148,20 +153,9 @@ const config = {
         theme: prismThemes.github,
         darkTheme: prismThemes.dracula,
       },
-      zoom: {
-        selector: 'img.image-zoom, .markdown :not(em) > img',
-        background: {
-          light: 'rgb(255, 255, 255)',
-          dark: 'rgb(50, 50, 50)'
-        },
-        config: {
-          // options you can specify via https://github.com/francoischalifour/medium-zoom#usage
-        },
-      },
     }),
     
     plugins: [
-      'docusaurus-plugin-image-zoom',
       [
         '@docusaurus/plugin-ideal-image',
         {

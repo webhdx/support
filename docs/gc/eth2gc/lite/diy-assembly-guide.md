@@ -28,8 +28,8 @@ STL file for 3D printed case, PCB gerbers and full Bill Of Materials with purcha
 
 Reference below photos for connector orientation.
 
-<Figure img={require('/img/eth2gc/build-guide/Lite_Breakout_PCB_Front.jpeg')} alt='PCB front' caption='Front of the PCB' />
-<Figure img={require('/img/eth2gc/build-guide/Lite_Breakout_PCB_Back.jpeg')} alt='PCB back' caption='Back of the PCB' />
+<Figure img={require('/img/eth2gc/build-guide/Lite_Breakout_PCB_Front.jpeg')} alt='PCB front' caption='Front of the PCB' zoom />
+<Figure img={require('/img/eth2gc/build-guide/Lite_Breakout_PCB_Back.jpeg')} alt='PCB back' caption='Back of the PCB' zoom />
 
 * Leaded solder is recommended - it's easier to work with. 
 * Use temperature controller soldering iron set to 330&deg;C (~620&deg;F). 
@@ -43,7 +43,7 @@ Reference below photos for connector orientation.
 * Supports are not needed as long as your settings are optimized for printing overhangs and bridges. 
 * You can use many different materials. PLA, PETG or ABS are great choices.
 
-<Figure img={require('/img/eth2gc/build-guide/ETH2GC_Lite_Printing.jpg')} alt='Printing orientation' caption='Correct printing orientation, support are not required' />
+<Figure img={require('/img/eth2gc/build-guide/ETH2GC_Lite_Printing.jpg')} alt='Printing orientation' caption='Correct printing orientation, support are not required' zoom />
 
 ## Assembly
 
@@ -54,6 +54,6 @@ Some **ENC28J60 Mini** boards might be wider than others. If your module does no
 Connect ENC28J60 module to breakout PCB and press it down in the 3D printed case. It might require some fiddling to attach parts together. Do not use excessive force to avoid damaging delicate parts.
 
 
-<Figure img={require('/img/eth2gc/build-guide/Lite_Breakout_PCB_Attached.jpeg')} alt='ENC28J60 and Breakout PCB connected together' caption='ENC28J60 and Breakout PCB connected together' />
-<Figure img={require('/img/eth2gc/build-guide/Lite_Breakout_Aligned.jpeg')} alt='Case and PCB aligned' caption='Align the case and PCB, then press down' />
-<Figure img={require('/img/eth2gc/build-guide/Lite_Breakout_Assembled.jpeg')} alt='Final assembly' caption='This is how properly assembled ETH2GC Lite looks like' />
+<Figure img={require('/img/eth2gc/build-guide/Lite_Breakout_PCB_Attached.jpeg')} alt='ENC28J60 and Breakout PCB connected together' caption='ENC28J60 and Breakout PCB connected together' zoom />
+<Figure img={require('/img/eth2gc/build-guide/Lite_Breakout_Aligned.jpeg')} alt='Case and PCB aligned' caption='Align the case and PCB, then press down' zoom />
+<Figure img={require('/img/eth2gc/build-guide/Lite_Breakout_Assembled.jpeg')} alt='Final assembly' caption='This is how properly assembled ETH2GC Lite looks like' zoom />
