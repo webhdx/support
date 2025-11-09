@@ -12,7 +12,7 @@ The recommended way to build PicoBoot is using VS Code with the provided devcont
 ## Development Environment Setup
 
 1. Install [VS Code](https://code.visualstudio.com/)
-2. Install [Docker](https://www.docker.com/products/docker-desktop)
+2. Install [Docker](https://www.docker.com/products/docker-desktop/)
 3. Install [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension in VS Code
 4. Clone the PicoBoot repository
 5. Open the project in VS Code
