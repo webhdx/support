@@ -1,0 +1,9 @@
+{
+  "plugins": {},
+  "filters": {},
+  "rules": {
+    "no-dead-link": {
+      "ignoreRedirects": false
+    }
+  }
+}
