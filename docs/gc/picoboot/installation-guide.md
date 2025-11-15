@@ -16,7 +16,14 @@ PicoBoot is considered an easy soldering modification. However, there is signifi
 
 ### Raspberry Pi Pico board
 
+**Compatible boards:**
+- Raspberry Pi Pico (RP2040)
+- Raspberry Pi Pico W (RP2040 with WiFi/Bluetooth)
+- Raspberry Pi Pico 2 (RP2350)
+- Raspberry Pi Pico 2 W (RP2350 with WiFi/Bluetooth) <span class="badge badge--success">RECOMMENDED</span>
+
 **Raspberry Pi Pico 2 W** is the recommended board for new PicoBoot installations. It features a more powerful microcontroller (RP2350), increased RAM and flash memory, plus built-in WiFi and Bluetooth connectivity. These improvements may enable future feature enhancements. PicoBoot will continue to support Pico and Pico W boards (RP2040) for as long as possible.
+
 
 ```mdx-code-block
 <ProductGrid>
