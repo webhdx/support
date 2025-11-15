@@ -108,7 +108,7 @@
   top: 12px;
   right: 12px;
   background: var(--ifm-color-primary);
-  color: white;
+  color: var(--ifm-font-color-base-inverse);
   padding: 4px 12px;
   border-radius: 20px;
   font-size: 0.75rem;
@@ -219,7 +219,7 @@
 }
 
 [data-theme='dark'] .imageContainer {
-  background: var(--ifm-color-emphasis-100);
+  background: #ffffff;
 }
 
 [data-theme='dark'] .productCard:hover {

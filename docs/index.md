@@ -4,29 +4,18 @@ title: Home
 hide_table_of_contents: true
 ---
 
-import DocCardList from "@theme/DocCardList";
 import Image from "@theme/IdealImage";
+import { PicoBootCard } from '@site/src/components/ProjectCard/PicoBootCard';
+import { ETH2GCCard } from '@site/src/components/ProjectCard/ETH2GCCard';
+import { OtherModsCard } from '@site/src/components/ProjectCard/OtherModsCard';
 
 ### GameCube
 
-<DocCardList
-  items={[
-    {
-      type: "link",
-      href: "/gc/eth2gc",
-      label: "ETH2GC",
-      description:
-        "ETH2GC - Broadband Adapter Emulator",
-    },
-    {
-      type: "link",
-      href: "/gc/picoboot",
-      label: "PicoBoot",
-      description:
-        "Open Source IPL replacement modchip",
-    },
-  ]}
-/>
+<div className="row">
+  <PicoBootCard />
+  <ETH2GCCard />
+  <OtherModsCard />
+</div>
 
 
 ## Join Discord server
