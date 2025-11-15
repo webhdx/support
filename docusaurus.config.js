@@ -106,7 +106,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} webhdx`,
+        copyright: `Copyright © ${new Date().getFullYear()} webhdx<br/><small style="opacity: 0.7; font-size: 0.85em;">Some purchase links are part of affiliate programs. I receive a small commission at no extra cost to you, which helps support my work and fund new projects.</small>`,
         links: [
           {
             title: 'Docs',
