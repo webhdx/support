@@ -162,3 +162,43 @@
 [data-theme='dark'] .hero.project::before {
   filter: invert(1) grayscale(100%);
 }
+
+/* Project card background styles */
+.project-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background-size: 80px 80px;
+  background-repeat: space;
+  opacity: 0.05;
+  filter: grayscale(100%);
+  transform: rotate(45deg);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.project-card.picoboot::before {
+  background-image: url('/img/picoboot/logo.svg');
+}
+
+.project-card.eth2gc::before {
+  background-image: url('/img/eth2gc/eth2gc.svg');
+  background-size: 80px auto;
+}
+
+[data-theme='dark'] .project-card::before {
+  filter: invert(1) grayscale(100%);
+}
+
+.project-card > * {
+  position: relative;
+  z-index: 1;
+}
