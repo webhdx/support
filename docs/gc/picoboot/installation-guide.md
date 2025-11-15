@@ -3,49 +3,99 @@ title: Install PicoBoot
 description: "Comprehensive installation guide for PicoBoot modchip, including required materials, step-by-step instructions for flashing firmware, preparing SD card, and hardware installation."
 ---
 
-import ShoppingButton from '@site/src/components/ShoppingButton';
+import { ProductCard, ProductGrid, ProductList, ProductListItem } from '@site/src/components/ProductCard';
 import Figure from '@site/src/components/Figure';
 
 # Install PicoBoot
 
-:::danger Firmware Version Warning
-A small percentage of **v0.4 and above** firmware users reported reliability issues. If you experience problems, please use v0.3.x firmware instead:
-- Download the latest v0.3.x release from [GitHub](https://github.com/webhdx/PicoBoot/releases/tag/v0.3.1)
-- Wire PicoBoot according to [legacy v0.3 wiring diagram](https://raw.githubusercontent.com/webhdx/PicoBoot/refs/tags/v0.3/assets/Wiring%20diagram.jpg)
-:::
-
-:::warning Soldering Experience Required
+:::danger Soldering Experience Required
 PicoBoot is considered an easy soldering modification. However, there is significant evidence online showing that inexperienced users can easily damage their console beyond repair. Do not overestimate your soldering skills. Practice soldering on scrap electronics before attempting this installation.
 :::
 
 ## Required Materials
 
-Affiliate links below help support the project at no extra cost to you. Thank you for your support! 🙏
+### Raspberry Pi Pico board
 
-### Essential Tools
-- Soldering iron like T12 station (<ShoppingButton url="https://s.click.aliexpress.com/e/_opdkDGf" />) or PINE64 (<ShoppingButton url="https://s.click.aliexpress.com/e/_oENPHxd" />)
-- Soldering wire: Sn60Pb40 lead-based is recommended (<ShoppingButton url="https://s.click.aliexpress.com/e/_opePFor" />)
-- Flux (<ShoppingButton url="https://s.click.aliexpress.com/e/_omFsBsn" />)
-- 26-28 AWG gauge wires (<ShoppingButton url="https://s.click.aliexpress.com/e/_om0Bpt1" />)
-
-### Hardware Components
-1. Compatible Raspberry Pi board (<ShoppingButton url="https://s.click.aliexpress.com/e/_oCdaL9v" />):
-   - Raspberry Pi Pico
-   - Raspberry Pi Pico W
-   - Raspberry Pi Pico 2
-   - Raspberry Pi Pico 2 W <span class="badge badge--success">RECOMMENDED</span>
-
-:::tip Why Raspberry Pi Pico 2 W?
 **Raspberry Pi Pico 2 W** is the recommended board for new PicoBoot installations. It features a more powerful microcontroller (RP2350), increased RAM and flash memory, plus built-in WiFi and Bluetooth connectivity. These improvements may enable future feature enhancements. PicoBoot will continue to support Pico and Pico W boards (RP2040) for as long as possible.
-:::
-2. SD card adapter like GC2SD, SD Gecko, WiiSD or SD2SP2:
-   - SD2SP2: If you have DOL-001 with Serial Port 2 (<ShoppingButton url="https://s.click.aliexpress.com/e/_olfXufh" />)
-   - GC2SD/WiiSD/SD Gecko: If you have DOL-001 with Serial Port 2 (<ShoppingButton url="https://s.click.aliexpress.com/e/_onzxcOR" />)
-3. FAT32 formatted SD card
 
-:::note Semi-passive SD card adapters
-Nowadays there are new, upgraded SD card adapter utilizing aditional discrete logic component to greatly improve reading speeds. All above links are for semi-passive adapters.
-:::
+```mdx-code-block
+<ProductGrid>
+  <ProductCard
+    name="Raspberry Pi Pico board"
+    description="PicoBoot is compatible with all official Pico boards. The original $4 Pico is still great but consider Pico 2 W for future enhancements."
+    url="https://s.click.aliexpress.com/e/_oCdaL9v"
+    image={require('@site/static/img/products/picoboot/pico-board.jpg')}
+    storeName="AliExpress"
+  />
+</ProductGrid>
+```
+
+### SD card with an adapter
+
+Get one of these adapters. SD2SP2 is usually preferred but make sure your console has Serial Port 2 (most DOL-001 models, DOL-101 and Panasonic Q are incomaptible). Following adapters are upgraded, semi-passive version which offers the best gaming experience. Both options now offer the same read speeds despite common beliefs on online forums.
+
+If you source it from other stores make sure to look for the upgraded versions of these adapters. They are called semi-passive and come with a small chip on board. The difference is very noticeable in read speeds.
+
+You also need an SD card, format it to FAT32 or exFAT. FAT32 is recommended for better compatibility with homebrew software.
+
+```mdx-code-block
+<ProductGrid>
+  <ProductCard
+    name="SD2SP2 v1.3 PRO"
+    description="Semi-passive SD card adapter for DOL-001 Serial Port 2. Improved reading speeds."
+    url="https://s.click.aliexpress.com/e/_olfXufh"
+    image={require('@site/static/img/products/picoboot/sd2sp2.jpg')}
+    storeName="AliExpress"
+  />
+  <ProductCard
+    name="GC2SD"
+    description="Alternative SD card adapter with semi-passive design. Inserted into Memory Card slot."
+    url="https://s.click.aliexpress.com/e/_onzxcOR"
+    image={require('@site/static/img/products/picoboot/gc2sd.jpg')}
+    storeName="AliExpress"
+  />
+</ProductGrid>
+```
+### Other supplies and tools
+
+#### Soldering iron
+
+```mdx-code-block
+<ProductList>
+  <ProductListItem
+    name="T12 Soldering Station"
+    url="https://s.click.aliexpress.com/e/_opdkDGf"
+    storeName="AliExpress"
+  />
+  <ProductListItem
+    name="PINE64"
+    url="https://s.click.aliexpress.com/e/_c3zxtZjP"
+    storeName="AliExpress"
+  />
+</ProductList>
+```
+
+#### Other supplies
+
+```mdx-code-block
+<ProductList>
+  <ProductListItem
+    name="Solder Wire"
+    url="https://s.click.aliexpress.com/e/_c3eCRJNF"
+    storeName="AliExpress"
+  />
+  <ProductListItem
+    name="Soldering Flux"
+    url="https://s.click.aliexpress.com/e/_c3VbCqDP"
+    storeName="AliExpress"
+  />
+  <ProductListItem
+    name="26-28 AWG Wire Kit"
+    url="https://s.click.aliexpress.com/e/_om0Bpt1"
+    storeName="AliExpress"
+  />
+</ProductList>
+```
 
 ## Installation Steps
 

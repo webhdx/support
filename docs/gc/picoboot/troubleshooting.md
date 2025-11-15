@@ -24,6 +24,12 @@ Some inexpensive Chinese GCVideo-based HDMI adapters can cause similar "booting 
 
 ## Problem: Orange light on, no display (black or blue screen, no input screen)
 
+:::warning Firmware Version
+A small percentage of **v0.4 and above** firmware users reported reliability issues often resulting in no display/black screen. If you experience problems, please use v0.3.x firmware instead:
+- Download the latest v0.3.x release from [GitHub](https://github.com/webhdx/PicoBoot/releases/tag/v0.3.1)
+- Wire PicoBoot according to [legacy v0.3 wiring diagram](https://raw.githubusercontent.com/webhdx/PicoBoot/refs/tags/v0.3/assets/Wiring%20diagram.jpg)
+:::
+
 ### Cause: Excessive wire length
 If your soldering is correct and there are no shorts, you're likely experiencing data line interference due to wire length. Follow this golden rule: keep wires as short as possible. The maximum recommended length is approx. 10 centimeters (or 4 inches). Wire type is crucial - use 26-28 AWG stranded wires. Single-core or thick wires can break easily or, in worst cases, damage motherboard pads if stressed.
 
