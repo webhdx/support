@@ -75,6 +75,14 @@ const sidebars = {
             'gc/picoboot/faq',
           ]
         },
+        {
+          type: 'category',
+          label: 'Other mods',
+          link: {type: 'doc', id: 'gc/other-mods/index'},
+          items: [
+            'gc/other-mods/power-mods',
+          ]
+        },
       ],
     },
   ],
