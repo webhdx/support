@@ -9,7 +9,7 @@ import Figure from '@site/src/components/Figure';
 # Install PicoBoot
 
 :::danger Firmware Version Warning
-A small percentage of **v0.4** firmware users reported reliability issues. If you experience problems, please use v0.3.x firmware instead:
+A small percentage of **v0.4 and above** firmware users reported reliability issues. If you experience problems, please use v0.3.x firmware instead:
 - Download the latest v0.3.x release from [GitHub](https://github.com/webhdx/PicoBoot/releases/tag/v0.3.1)
 - Wire PicoBoot according to [legacy v0.3 wiring diagram](https://raw.githubusercontent.com/webhdx/PicoBoot/refs/tags/v0.3/assets/Wiring%20diagram.jpg)
 :::
