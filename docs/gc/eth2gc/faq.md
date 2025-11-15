@@ -2,7 +2,7 @@
 title: FAQ
 ---
 
-import ShoppingButton from '@site/src/components/ShoppingButton';
+import { ProductCard, ProductGrid } from '@site/src/components/ProductCard';
 import Figure from '@site/src/components/Figure';
 
 # FAQ
@@ -19,10 +19,17 @@ Yes. ETH2GC is compatible with any method of loading Swiss.
 ### Does ETH2GC work with SD2SP2 adapter?
 No. Both devices use the same port. You need a different adapter which interfaces SD cards to GC's memory card slots. They come under different names: WiiSD, GC2SD, SD Gecko and offer the same performance as SD2SP2 adapter.
 
-| Adapter                                    | Links                                                   |
-|:------------------------------------------:|---------------------------------------------------------|
-| <Figure img={require('/img/sd/wiisd.jpg')} alt='WiiSD' caption='WiiSD' /> | <ShoppingButton url="https://s.click.aliexpress.com/e/_Dm949Gp" /> |
-| <Figure img={require('/img/sd/gc2sd.jpg')} alt='GC2SD' caption='GC2SD' /> | <ShoppingButton url="https://s.click.aliexpress.com/e/_DFF8UOt" /> |
+```mdx-code-block
+<ProductGrid>
+  <ProductCard
+    name="GC2SD"
+    description="Alternative SD card adapter with semi-passive design. Inserted into Memory Card slot."
+    url="https://s.click.aliexpress.com/e/_onzxcOR"
+    image={require('@site/static/img/products/picoboot/gc2sd.jpg')}
+    storeName="AliExpress"
+  />
+</ProductGrid>
+```
 
 ### Are there any limitations when using ETH2GC?
 Yes. As of today, Broadband Adapter emulation feature is incompatible with loading games using physical discs. Additionally, the ENC28J60 driver is not capable of providing speeds required to stream game ISOs from network-attached storage (like RetroNAS).
