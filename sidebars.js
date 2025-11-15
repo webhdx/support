@@ -81,6 +81,7 @@ const sidebars = {
           link: {type: 'doc', id: 'gc/other-mods/index'},
           items: [
             'gc/other-mods/power-mods',
+            'gc/other-mods/av-mods',
           ]
         },
       ],
