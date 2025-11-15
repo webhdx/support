@@ -33,7 +33,11 @@ Affiliate links below help support the project at no extra cost to you. Thank yo
    - Raspberry Pi Pico
    - Raspberry Pi Pico W
    - Raspberry Pi Pico 2
-   - Raspberry Pi Pico 2 W
+   - Raspberry Pi Pico 2 W <span class="badge badge--success">RECOMMENDED</span>
+
+:::tip Why Raspberry Pi Pico 2 W?
+**Raspberry Pi Pico 2 W** is the recommended board for new PicoBoot installations. It features a more powerful microcontroller (RP2350), increased RAM and flash memory, plus built-in WiFi and Bluetooth connectivity. These improvements may enable future feature enhancements. PicoBoot will continue to support Pico and Pico W boards (RP2040) for as long as possible.
+:::
 2. SD card adapter like GC2SD, SD Gecko, WiiSD or SD2SP2:
    - SD2SP2: If you have DOL-001 with Serial Port 2 (<ShoppingButton url="https://s.click.aliexpress.com/e/_olfXufh" />)
    - GC2SD/WiiSD/SD Gecko: If you have DOL-001 with Serial Port 2 (<ShoppingButton url="https://s.click.aliexpress.com/e/_onzxcOR" />)
