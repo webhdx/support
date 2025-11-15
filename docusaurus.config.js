@@ -89,6 +89,11 @@ const config = {
             label: 'PicoBoot',
           },
           {
+            position: 'left',
+            to: '/gc/other-mods',
+            label: 'Other mods',
+          },
+          {
             href: 'https://store.webhdx.dev',
             label: 'Store',
             class: 'button button--outline button--primary',
