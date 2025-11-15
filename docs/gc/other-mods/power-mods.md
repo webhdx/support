@@ -136,6 +136,7 @@ If you absolutely must purchase a third-party power supply as a last resort, her
     description="Generic replacement power supply. Not recommended - may cause video quality issues. Buy only as last resort."
     url="https://s.click.aliexpress.com/e/_c4aITlFf"
     image={require('@site/static/img/products/usb-c-mods/third-party-psu.jpg')}
+    badge="Not recommended"
     storeName="AliExpress"
   />
 </ProductGrid>
