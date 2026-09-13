@@ -8,7 +8,7 @@ import Figure from '@site/src/components/Figure';
 
 # Install PicoBoot
 
-:::danger Soldering Experience Required
+:::danger[Soldering Experience Required]
 PicoBoot is considered an easy soldering modification. However, there is significant evidence online showing that inexperienced users can easily damage their console beyond repair. Do not overestimate your soldering skills. Practice soldering on scrap electronics before attempting this installation.
 :::
 
@@ -124,7 +124,7 @@ You also need an SD card, format it to FAT32 or exFAT. FAT32 is recommended for 
 
 ### Hardware Installation
 
-:::info Wiring Update
+:::info[Wiring Update]
 **Important Change:** PicoBoot v0.4+ has updated wiring requirements and briding pins GP6 and GP7 is no longer required. New firmware is backwards compatible with legacy wiring but you should follow the new wiring diagram below.
 :::
 

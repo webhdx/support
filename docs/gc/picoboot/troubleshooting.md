@@ -24,7 +24,7 @@ Some inexpensive Chinese GCVideo-based HDMI adapters can cause similar "booting 
 
 ## Problem: Orange light on, no display (black or blue screen, no input screen)
 
-:::warning Firmware Version
+:::warning[Firmware Version]
 A small percentage of **v0.4 and above** firmware users reported reliability issues often resulting in no display/black screen. If you experience problems, please use v0.3.x firmware instead:
 - Download the latest v0.3.x release from [GitHub](https://github.com/webhdx/PicoBoot/releases/tag/v0.3.1)
 - Wire PicoBoot according to [legacy v0.3 wiring diagram](https://raw.githubusercontent.com/webhdx/PicoBoot/refs/tags/v0.3/assets/Wiring%20diagram.jpg)
