@@ -6,7 +6,7 @@ import { ProductCard, ProductGrid } from '@site/src/components/ProductCard';
 
 Various power supply modifications for GameCube that modernize the power delivery system.
 
-:::tip USB-C Power Delivery voltage requirements
+:::tip[USB-C Power Delivery voltage requirements]
 
 Pay attention to the **Power Delivery voltage requirements** when choosing a USB-C port replacement board. Some designs require **12V PD**, which is less common in the USB Power Delivery standard.
 
@@ -109,7 +109,7 @@ This modification involves replacing the original "power input board" PCB with a
 
 ## Third-party replacement power supplies
 
-:::danger Not recommended
+:::danger[Not recommended]
 
 Third-party replacement power supplies are **not recommended** for GameCube. While they may seem like a convenient and affordable option, they often cause more problems than they solve.
 

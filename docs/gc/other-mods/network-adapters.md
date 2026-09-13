@@ -11,7 +11,7 @@ import { ETH2GCModelsDefault } from '@site/src/components/ETH2GC';
 
 GameCube originally supported network connectivity through the official Broadband Adapter (BBA) and Modem Adapter. These adapters are now rare and expensive. Modern homebrew software like Swiss can emulate the Broadband Adapter, enabling various community-made network adapter solutions.
 
-:::info Requires homebrew
+:::info[Requires homebrew]
 All modern network adapters require homebrew software (typically [Swiss](https://github.com/emukidid/swiss-gc/)) to function. They emulate the original Broadband Adapter behavior through software.
 :::
 
